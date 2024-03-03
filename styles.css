@@ -1,9 +1,10 @@
-body {
-  background-color: #181b1a !important;
-}
 * {
   color: #c7d1cc !important;
   font-family: "IBM Plex Mono", Courier, monospace;
+}
+
+body {
+  background-color: #181b1a !important;
 }
 
 .container {
