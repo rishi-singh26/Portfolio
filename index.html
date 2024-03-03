@@ -1,18 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rishi</title>
     <link rel="stylesheet" href="./styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <script type="text/javascript">
+        let submitted = false;
+
+        function handleSubmit() {
+            submitted = true;
+            setTimeout(() => {
+                document.getElementById("connect-form").reset();
+            }, 5000);
+        }
+
+    </script>
 </head>
+
 <body>
-    <main class="container">
-        <p>Hello, I am Rishi</p>
+    <main class="container ">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 mx-auto custom-content">
+                <p>Hello, I am Rishi.</p>
+                <br>
+                <p>Read my blogs on <a href="https://medium.com/@rishi_singh" target="_blank">Medium</a>.</p>
+                <p>Explore my projects on <a href="https://github.com/rishi-singh26" target="_blank">Github</a>.</p>
+                <p>Follow up with me on <a href="https://www.linkedin.com/in/rishi-singh-b2226415b/"
+                        target="_blank">Linkedin</a>.</p>
+
+                <br>
+
+                <p>
+                    I can write cross-platform mobile and desktop applications using <a href="https://flutter.dev"
+                        target="_blank">Flutter</a> and <a href="https://reactnative.dev" target="_blank">React
+                        Native</a>
+                    and
+                    web applications using <a href="https://angular.dev" target="_blank">Angular</a> and <a
+                        href="https://react.dev" target="_blank">React</a>.
+                </p>
+
+                <p>
+                    I can write backend applications using <a href="https://expressjs.com"
+                        target="_blank">Express.js</a>
+                    with
+                    <a href="https://nodejs.org/" target="_blank">Node.js</a>. I have also used baas services like <a
+                        href="https://firebase.google.com" target="_blank">Firebase</a> and <a
+                        href="https://appwrite.io" target="_blank">Appwrite</a> for some of my projects.
+                </p>
+
+                <p>
+                    I have experience working with NoSQL databases like <a href="https://www.mongodb.com"
+                        target="_blank">MongoDB</a> and relational databases like <a href="https://www.mysql.com"
+                        target="_blank">MySQL</a>.
+                </p>
+
+                <p>
+                    I like data structures and algorithms, tinkering with algorithms is one of my hobbies. You can check
+                    my
+                    achievements on <a href="https://www.hackerrank.com/profile/rishisingh0831"
+                        target="_blank">HackerRank</a>.
+                </p>
+                <br>
+
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+                    onload="if(submitted)  {window.location='#';}"></iframe>
+                <form
+                    action="https://docs.google.com/forms/d/e/1FAIpQLSdjSnv54ay6aiCA_ImBlquSLaGyDR7d5WfPOVwPL9e5vwTy1A/formResponse"
+                    method="post" target="hidden_iframe" onsubmit="submitted = true;" id="connect-form">
+
+                    <label for="email-input">Email</label>
+                    <input id="email-input" class="form-control input" name="entry.239412906" type="email" required
+                        placeholder="Your email address" />
+
+                    <label for="name-input">Name</label>
+                    <input id="name-input" class="form-control input" name="entry.1869165564" type="text" required
+                        placeholder="Your name" />
+
+                    <label for="subject-input">Subject</label>
+                    <input id="subject-input" class="form-control input" name="entry.1448749842" type="text" required
+                        placeholder="Your subject" />
+
+                    <label for="message-input">Message</label>
+                    <textarea id="message-input" class="form-control input" name="entry.1687177870" cols="30" rows="6"
+                        placeholder="Your message"></textarea>
+                    <br>
+                    <input class="form-control btn btn-primary" type="submit" value="Send" />
+
+                </form>
+            </div>
+        </div>
     </main>
+    <footer class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 mx-auto custom-content">
+                <h2><a style="text-decoration: none;" class="py-5" href="https://rishi.pgs.sh">✌️</a></h2>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
