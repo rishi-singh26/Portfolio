@@ -10,10 +10,6 @@ body {
   margin-top: 60px;
 }
 
-.letterbird-embed {
-  min-height: 550px !important;
-}
-
 ::placeholder {
   color: #888f8b !important;
   opacity: 1 !important;
@@ -27,6 +23,7 @@ body {
 
 .input {
   background-color: #0a0c0b !important;
+  border: 0px solid #939b97 !important;
 }
 
 .ibm-plex mono-thin {
