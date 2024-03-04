@@ -59,8 +59,7 @@
                 <hr>
 
                 <p>Got something for my inbox?</p>
-                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
-                    onload="if(submitted)  {window.location='#';}"></iframe>
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
                 <form
                     action="https://docs.google.com/forms/d/e/1FAIpQLSdjSnv54ay6aiCA_ImBlquSLaGyDR7d5WfPOVwPL9e5vwTy1A/formResponse"
                     method="post" target="hidden_iframe" onsubmit="submitted = true;" id="connect-form">
@@ -98,6 +97,15 @@
         </div>
     </footer>
 </body>
-<script type="text/javascript">let submitted = false;</script>
+<script type="text/javascript">
+    let submitted = false;
+
+    document.getElementById("hidden_iframe").addEventListener('load', () => {
+        if(submitted) {
+            window.location='#';
+            document.getElementById("connect-form").reset();
+        }
+    })
+</script>
 
 </html>
