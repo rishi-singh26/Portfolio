@@ -238,6 +238,23 @@ body {
     width: 100%;
 }
 
+.social-links-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px 0px;
+
+    .social-link {
+        padding: 0px 10px;
+    }
+
+    .social-image {
+        width: 30px;
+        height: 30px;
+    }
+}
+
 @media (max-width: 1100px) {
     .header {
         padding: 0px 20px;
