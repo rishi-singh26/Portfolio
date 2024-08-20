@@ -144,7 +144,7 @@ body {
     align-items: flex-start;
     justify-content: center;
     height: 100vh;
-    margin-top: 0px;
+    margin-top: 50px;
     padding: 0px 52px;
     gap: 30px;
 
@@ -316,7 +316,7 @@ body {
         }
 
         .hero-content {
-            font-size: 36px;
+            font-size: 34px;
             /* margin: 0px; */
         }
 
@@ -366,4 +366,17 @@ body {
             }
         }
     }
+}
+
+@media (max-width: 1100px) and (orientation: landscape) {
+    .hero {
+        height: max-content;
+        margin-top: 60px;
+    }
+}
+
+/* 404 page only styles */
+.header-link {
+    text-decoration: none;
+    color: #000;
 }
