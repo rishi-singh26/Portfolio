@@ -202,10 +202,8 @@ body {
     padding: 30px 0px;
     gap: 30px;
 
-    .sr-no {
-        font-size: 24px;
-        color: #656363;
-    }
+    text-decoration: none;
+    color: #000;
 
     .card-image {
         width: 170px;
@@ -297,10 +295,6 @@ body {
         padding: 20px 0px;
         gap: 20px;
 
-        .sr-no {
-            font-size: 15px;
-        }
-
         .card-image {
             width: 100px;
             height: 100px;
@@ -361,10 +355,6 @@ body {
     .card {
         padding: 10px 0px;
         gap: 20px;
-
-        .sr-no {
-            font-size: 15px;
-        }
 
         .card-image {
             width: 70px;

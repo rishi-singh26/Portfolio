@@ -4,8 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <meta http-equiv="Content-Security-Policy"
-        content="default-src 'self'; style-src 'self' https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css; script-src 'self'; frame-src 'self' https://docs.google.com/"> -->
     <meta http-equiv="Content-Security-Policy"
         content="default-src 'self'; style-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; script-src 'self' ; frame-src 'self' https://docs.google.com/; font-src 'self' https://fonts.gstatic.com; img-src 'self' https://cdn.jsdelivr.net">
     <title>Rishi Singh - Software Developer</title>
@@ -32,8 +30,6 @@
     <link href="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/Logo.png" rel="apple-touch-icon" />
 
     <link rel="stylesheet" href="./styles.css">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -64,19 +60,17 @@
         <div class="section">
             <h2 class="section-title inter-700">PROJECTS</h2>
             <!-- TempBox -->
-            <div class="card">
-                <img class="card-image"
-                    src="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/IconDefination.svg"
+            <a class="card" href="https://github.com/rishi-singh26/TempBox-Flutter" target="_blank">
+                <img class="card-image" src="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/TempBox.svg"
                     alt="TempBox application design specification">
                 <div class="card-content">
                     <h3 class="card-title inter-700">
                         TempBox
                     </h3>
-                    <p class="card-subtitle inter-700">Protect your inbox with Instant Disposable Emails! Generate
-                        secure, temporary addresses quickly.
-                        Stay spam-free and private.</p>
+                    <p class="card-subtitle inter-700">Protect your inbox with Instant Ananomous Emails! Generate
+                        disposable addresses with mail.tm api</p>
                 </div>
-            </div>
+            </a>
             <div class="divider"></div>
             <!-- TempBox -->
             <div class="card">
@@ -113,49 +107,56 @@
         <div class="section">
             <h2 class="section-title inter-700">ARTICLES</h2>
             <!-- TempBox -->
-            <div class="card">
-                <img class="card-image"
-                    src="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/IconDefination.svg"
-                    alt="TempBox application design specification">
+            <a class="card"
+                href="https://medium.com/@rishi_singh/how-to-implement-end-to-end-encryption-using-pbkdf-in-flutter-a5508e7ad93e"
+                target="_blank">
                 <div class="card-content">
                     <h3 class="card-title inter-700">
-                        TempBox
+                        Implement zero knowledge encryption using PBKDF in Flutter
                     </h3>
-                    <p class="card-subtitle inter-700">Protect your inbox with Instant Disposable Emails! Generate
-                        secure, temporary addresses quickly.
-                        Stay spam-free and private.</p>
+                    <p class="card-subtitle inter-700">In this article, we’ll look at how to set up an end-to-end
+                        encryption system to protect user data.</p>
                 </div>
-            </div>
+            </a>
             <div class="divider"></div>
             <!-- TempBox -->
-            <div class="card">
-                <img class="card-image"
-                    src="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/IconDefination.svg"
-                    alt="TempBox application design specification">
+            <a class="card"
+                href="https://medium.com/@rishi_singh/create-a-draggable-scrollable-bottomsheet-with-flutter-0ec50d93a3b9"
+                target="_blank">
                 <div class="card-content">
                     <h3 class="card-title inter-700">
-                        TempBox
+                        Create a Draggable Scrollable BottomSheet with Flutter
                     </h3>
-                    <p class="card-subtitle inter-700">Protect your inbox with Instant Disposable Emails! Generate
-                        secure, temporary addresses quickly.
-                        Stay spam-free and private.</p>
+                    <p class="card-subtitle inter-700">Let’s learn to implement a draggable and scrollable bottom sheet
+                        in flutter which can be added on a map or anywhere you want.</p>
                 </div>
-            </div>
+            </a>
             <div class="divider"></div>
             <!-- TempBox -->
-            <div class="card">
-                <img class="card-image"
-                    src="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/IconDefination.svg"
-                    alt="TempBox application design specification">
+            <a class="card"
+                href="https://medium.com/@rishi_singh/designing-platform-specific-uis-in-flutter-a-comprehensive-guide-61f444b6bf64"
+                target="_blank">
                 <div class="card-content">
                     <h3 class="card-title inter-700">
-                        TempBox
+                        Designing Platform-Specific UIs in Flutter: A Comprehensive Guide
                     </h3>
-                    <p class="card-subtitle inter-700">Protect your inbox with Instant Disposable Emails! Generate
-                        secure, temporary addresses quickly.
-                        Stay spam-free and private.</p>
+                    <p class="card-subtitle inter-700">In this article, we’ll explore how to create platform-specific
+                        UIs in Flutter. We’ll ensure our app follows the Material 3 design system on Android, Fluent UI
+                        on Windows, and Human Interface Guidelines (HIG) on iOS and macOS.</p>
                 </div>
-            </div>
+            </a>
+            <div class="divider"></div>
+            <!-- TempBox -->
+            <a class="card"
+                href="https://medium.com/@rishi_singh/how-to-blur-a-widget-in-flutter-edc32bfc6eea"
+                target="_blank">
+                <div class="card-content">
+                    <h3 class="card-title inter-700">
+                        How to Blur a Widget in Flutter
+                    </h3>
+                    <p class="card-subtitle inter-700">Blurring widgets in Flutter can be a daunting task for beginners, but fear not! In this article, we will go through the process of blurring widgets.</p>
+                </div>
+            </a>
             <div class="divider"></div>
         </div>
         <!-- Get in touch -->
@@ -169,12 +170,12 @@
                     href="https://www.linkedin.com/in/rishi-singh-b2226415b"><img class="social-image"
                         src="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/linkedin-icon.svg"
                         alt="TempBox application design specification"></a>
-                <a class="inter-500 social-link" target="_blank"
-                    href="https://medium.com/@rishi_singh"><img class="social-image"
+                <a class="inter-500 social-link" target="_blank" href="https://medium.com/@rishi_singh"><img
+                        class="social-image"
                         src="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/medium-icon.svg"
                         alt="TempBox application design specification"></a>
-                <a class="inter-500 social-link" target="_blank"
-                    href="https://www.github.com/in/rishi-singh26"><img class="social-image"
+                <a class="inter-500 social-link" target="_blank" href="https://www.github.com/in/rishi-singh26"><img
+                        class="social-image"
                         src="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/github-icon.svg"
                         alt="TempBox application design specification"></a>
             </div>
