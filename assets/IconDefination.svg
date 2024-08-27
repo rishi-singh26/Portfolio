@@ -1,46 +1,23 @@
 <svg width="815" height="814" viewBox="0 0 815 814" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M2 181C2 81.5886 82.5888 1 182 1H634.14C733.551 1 814.14 81.5888 814.14 181V633.14C814.14 732.551 733.551 813.14 634.14 813.14H182C82.5886 813.14 2 732.551 2 633.14V181Z" fill="url(#paint0_radial_213_333)"/>
-<path d="M600.502 620.296H213.769C171.228 620.296 136.422 582.227 136.422 535.698V281.904H677.849V535.698C677.849 582.227 643.043 620.296 600.502 620.296Z" fill="url(#paint1_linear_213_333)"/>
-<g filter="url(#filter0_d_213_333)">
-<path d="M677.849 292.62L407.136 430.797L136.422 292.62V272.881C136.422 229.454 171.228 193.923 213.769 193.923H600.502C643.043 193.923 677.849 229.454 677.849 272.881V292.62Z" fill="url(#paint2_linear_213_333)" shape-rendering="crispEdges"/>
-</g>
-<rect x="69.0207" y="69.0205" width="675.959" height="675.959" stroke="#5A7DEA" stroke-width="2"/>
-<circle cx="407.883" cy="407.882" r="141.124" stroke="#5A7DEA" stroke-width="2"/>
+<path d="M2 181C2 81.5886 82.5888 1 182 1H634.14C733.551 1 814.14 81.5888 814.14 181V633.14C814.14 732.551 733.551 813.14 634.14 813.14H182C82.5886 813.14 2 732.551 2 633.14V181Z" fill="url(#paint0_radial_253_4)"/>
+<rect x="69.0208" y="69.0207" width="675.959" height="675.959" stroke="#5A7DEA" stroke-width="2"/>
+<circle cx="407.883" cy="407.883" r="141.124" stroke="#5A7DEA" stroke-width="2"/>
 <circle cx="407.883" cy="407.883" r="282.366" stroke="#5A7DEA" stroke-width="2"/>
-<path d="M0.93103 813.069L813.069 0.931152" stroke="#5A7DEA" stroke-width="2"/>
-<path d="M0.93103 0.931152L813.069 813.069" stroke="#5A7DEA" stroke-width="2"/>
-<path d="M297.538 0.931152V813.069" stroke="#5A7DEA" stroke-width="2"/>
-<path d="M407 0.931152V813.069" stroke="#5A7DEA" stroke-width="2"/>
-<path d="M516.462 0.931152V813.069" stroke="#5A7DEA" stroke-width="2"/>
-<path d="M0.93103 516.462H813.069" stroke="#5A7DEA" stroke-width="2"/>
-<path d="M0.93103 407H813.069" stroke="#5A7DEA" stroke-width="2"/>
-<path d="M0.93103 297.538H813.069" stroke="#5A7DEA" stroke-width="2"/>
+<path d="M0.931152 813.069L813.069 0.931152" stroke="#5A7DEA" stroke-width="2"/>
+<path d="M0.931152 0.931152L813.069 813.069" stroke="#5A7DEA" stroke-width="2"/>
+<path d="M297.538 0.93103V813.069" stroke="#5A7DEA" stroke-width="2"/>
+<path d="M407 0.930908V813.069" stroke="#5A7DEA" stroke-width="2"/>
+<path d="M516.462 0.930908V813.069" stroke="#5A7DEA" stroke-width="2"/>
+<path d="M0.931152 516.462H813.069" stroke="#5A7DEA" stroke-width="2"/>
+<path d="M0.931152 407H813.069" stroke="#5A7DEA" stroke-width="2"/>
+<path d="M0.931152 297.538H813.069" stroke="#5A7DEA" stroke-width="2"/>
 <rect x="182.014" y="125.517" width="449.972" height="564.731" rx="35" stroke="#5A7DEA" stroke-width="2"/>
 <rect x="153.766" y="153.765" width="506.469" height="506.469" rx="35" stroke="#5A7DEA" stroke-width="2"/>
 <rect x="125.517" y="182.014" width="564.731" height="449.972" rx="35" stroke="#5A7DEA" stroke-width="2"/>
 <defs>
-<filter id="filter0_d_213_333" x="86.4224" y="173.923" width="641.427" height="336.874" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feOffset dy="30"/>
-<feGaussianBlur stdDeviation="25"/>
-<feComposite in2="hardAlpha" operator="out"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_213_333"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_213_333" result="shape"/>
-</filter>
-<radialGradient id="paint0_radial_213_333" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(408.07 407.07) rotate(90) scale(406.07)">
-<stop offset="0.575" stop-color="#1A4AE0" stop-opacity="0"/>
-<stop offset="1" stop-color="#1A4AE0" stop-opacity="0.28"/>
+<radialGradient id="paint0_radial_253_4" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(408.07 407.07) rotate(90) scale(406.07)">
+<stop offset="0.375" stop-color="#1A4AE0" stop-opacity="0.13"/>
+<stop offset="1" stop-color="#1A4AE0" stop-opacity="0.42"/>
 </radialGradient>
-<linearGradient id="paint1_linear_213_333" x1="407.136" y1="281.904" x2="407.136" y2="620.296" gradientUnits="userSpaceOnUse">
-<stop stop-color="#EEEEEE" stop-opacity="0.933333"/>
-<stop offset="1" stop-color="white"/>
-</linearGradient>
-<linearGradient id="paint2_linear_213_333" x1="407.136" y1="193.923" x2="407.136" y2="430.797" gradientUnits="userSpaceOnUse">
-<stop stop-color="white"/>
-<stop offset="0.99995" stop-color="#DDDDDD"/>
-<stop offset="1" stop-color="#FF5093" stop-opacity="0"/>
-</linearGradient>
 </defs>
 </svg>
