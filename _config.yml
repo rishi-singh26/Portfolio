@@ -1,0 +1,30 @@
+# Site settings
+title: Rishi Singh - Software Developer
+description: Experienced software developer in the vibrant tech landscape of southern India, building innovative solutions with precision and passion. Explore my portfolio of impactful projects.
+
+# URLs
+posterURL: https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/WebOGPoster.png
+faviconURL: https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/FavIcon.png
+logoURL: https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/Logo.png
+
+# URL settings - IMPORTANT for GitHub Pages
+# -----------------------------------------
+# url: The full domain URL including protocol
+# baseurl: The subpath of your site (starting with /)
+
+url: "https://rishisingh.in" # the base hostname & protocol
+baseurl: "" # Empty string since the site is at the root
+
+# Google Analytics
+google_analytics: GTM-MBNT6PWM # Replace with your actual Measurement ID
+
+# Build settings
+markdown: kramdown
+permalink: /blog/:title/
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
