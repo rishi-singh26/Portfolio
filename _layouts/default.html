@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; style-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; script-src 'self' ; frame-src 'self' https://docs.google.com/; font-src 'self' https://fonts.gstatic.com; img-src 'self' https://cdn.jsdelivr.net">
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <link rel="canonical" key="canonical" href="https://rishisingh.in/" />
+    <meta content="{{ site.description }}" name="description" />
+    <meta content="{{ page.title }} | {{ site.title }}" property="og:title" />
+    <meta content="{{ site.description }}" property="og:description" />
+    <meta content="{{ site.posterURL }}" property="og:image" />
+    <meta content="{{ page.title }} | {{ site.title }}" property="twitter:title" />
+    <meta content="{{ site.description }}" property="twitter:description" />
+    <meta content="{{ site.posterURL }}" property="twitter:image" />
+    <meta property="og:type" content="website" />
+    <meta content="summary_large_image" name="twitter:card" />
+
+    <link href="{{ site.faviconURL }}" rel="shortcut icon" type="image/x-icon" type="image/png" />
+    <link href="{{ site.logoURL }}" rel="apple-touch-icon" />
+
+    <link rel="stylesheet" href="../styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-MBNT6PWM');</script>
+    <!-- End Google Tag Manager -->
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MBNT6PWM" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <main class="canvas">
+        <!-- Header -->
+        <div class="header">
+            <h1 class="logo inter-700"><a class="header-link" href="./index.html">RS</a></h1>
+            <h2><a class="header-email inter-500" href="mailto:email@rishisingh.in">email@rishisingh.in</a></h2>
+        </div>
+
+        {{ content }}
+    </main>
+
+    <footer>
+        <!-- Get in touch -->
+        <div class="section">
+            <h2 class="section-title inter-700">GET IN TOUCH</h2>
+            <br>
+            <a class="btn inter-400" href="mailto:email@rishisingh.in">email@rishisingh.in</a>
+            <br>
+            <div class="social-links-row">
+                <a class="inter-500 social-link" target="_blank"
+                    href="https://www.linkedin.com/in/rishi-singh-b2226415b"><img class="social-image"
+                        src="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/linkedin-icon.svg"
+                        alt="Linkedin logo"></a>
+                <a class="inter-500 social-link" target="_blank" href="https://medium.com/@rishi_singh"><img
+                        class="social-image"
+                        src="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/medium-icon.svg"
+                        alt="Medium Logo"></a>
+                <a class="inter-500 social-link" target="_blank" href="https://www.github.com/in/rishi-singh26"><img
+                        class="social-image"
+                        src="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/github-icon.svg"
+                        alt="Github Logo"></a>
+            </div>
+            <p class="inter-400">Copyright © 2025 Rishi Singh. All Rights Reserved</p>
+            <br>
+            <br>
+        </div>
+    </footer>
+</body>
+
+</html>
