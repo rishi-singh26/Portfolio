@@ -101,6 +101,29 @@ body {
     transition: background-color var(--transition-fast) ease, color var(--transition-fast) ease;
 }
 
+/* When JS is enabled, hide elements that will be animated to avoid a flash before GSAP initializes */
+.js .header .logo,
+.js .header .header-email,
+.js .hero .hero-header,
+.js .social-links-row .social-link,
+.js .btn {
+    opacity: 0;
+    transform: translateY(12px);
+    will-change: transform, opacity;
+}
+
+/* Respect reduced motion: do not hide content for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .js .header .logo,
+  .js .header .header-email,
+  .js .hero .hero-header,
+  .js .social-links-row .social-link,
+  .js .btn {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
 .canvas {
     display: flex;
     flex-direction: column;
