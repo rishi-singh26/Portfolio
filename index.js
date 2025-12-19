@@ -11,14 +11,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
   if (!prefersReducedMotion && window.gsap) {
     gsap.registerPlugin(ScrollTrigger);
 
-    // entrance timeline
-    const tl = gsap.timeline({ defaults: { duration: 0.5, ease: 'power2.out' } });
-    tl.from('.header .logo', { y: -8, opacity: 0 })
-      .from('.header .header-email', { y: -8, opacity: 0 }, '<')
-      .from('.hero .hero-header', { y: 36, opacity: 0, stagger: 0.06 }, '-=0.2')
-      .from('.social-links-row .social-link', { y: 18, opacity: 0, stagger: 0.06 }, '-=0.45')
-      .from('.btn', { scale: 0.92, opacity: 0 }, '-=0.4');
-
     // scroll reveal for cards and sections
     gsap.utils.toArray('.card').forEach(card => {
       gsap.from(card, {
