@@ -17,7 +17,7 @@
 
     /* header */
     --header-bg: transparent;
-    --header-bg-scrolled: rgba(255, 255, 255, 0.4);
+    --header-bg-scrolled: rgba(255, 255, 255);
     --header-border-scrolled: rgb(215, 215, 215);
 
     /* buttons */
@@ -46,7 +46,7 @@
         --divider: #2a2a2a;
 
         --header-bg: transparent;
-        --header-bg-scrolled: rgba(8, 8, 8, 0.6);
+        --header-bg-scrolled: rgba(8, 8, 8);
         --header-border-scrolled: #2c2c2c;
 
         --btn-bg: #2a7a1b;
@@ -68,7 +68,7 @@ html.dark, html[data-theme="dark"] {
     --muted: #bdbdbd;
     --divider: #2a2a2a;
 
-    --header-bg-scrolled: rgba(8, 8, 8, 0.6);
+    --header-bg-scrolled: rgba(8, 8, 8);
     --header-border-scrolled: #2c2c2c;
 
     --btn-bg: #2a7a1b;
@@ -166,8 +166,8 @@ body {
 .header.scrolled {
     border-bottom: 0.5px solid var(--header-border-scrolled);
     background-color: var(--header-bg-scrolled);
-    backdrop-filter: blur(40px);
-    -webkit-backdrop-filter: blur(40px);
+    /*backdrop-filter: blur(40px);*/
+    /*-webkit-backdrop-filter: blur(40px);*/
 }
 
 /* --- Hero --- */
