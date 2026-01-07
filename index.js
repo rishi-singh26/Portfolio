@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     // scroll reveal for cards and sections
     gsap.utils.toArray('.card').forEach(card => {
       gsap.from(card, {
-        y: 10, opacity: 0, duration: 0.8, ease: 'power2.out',
+        y: 40, opacity: 0, duration: 0.8, ease: 'power2.out',
         scrollTrigger: { trigger: card, start: 'top 85%', toggleActions: 'play none none none' }
       });
     });
