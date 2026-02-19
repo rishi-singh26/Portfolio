@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; style-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; script-src 'self'; img-src 'self' https://quickchart.io; font-src 'self' https://fonts.gstatic.com">
+    <title>QR Code Customizer - Create Custom QR Codes | Rishi Singh</title>
+    <link rel="canonical" href="https://rishisingh.in/qr" />
+    <meta
+        content="Create custom QR codes with advanced options. Customize colors, add logos, set error correction levels, and generate QR codes in PNG or SVG format."
+        name="description" />
+    <meta content="QR Code Customizer - Create Custom QR Codes" property="og:title" />
+    <meta
+        content="Create custom QR codes with advanced options. Customize colors, add logos, set error correction levels, and generate QR codes in PNG or SVG format."
+        property="og:description" />
+    <meta content="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/WebOGPoster.png" property="og:image" />
+    <meta content="QR Code Customizer - Create Custom QR Codes" property="twitter:title" />
+    <meta
+        content="Create custom QR codes with advanced options. Customize colors, add logos, set error correction levels, and generate QR codes in PNG or SVG format."
+        property="twitter:description" />
+    <meta content="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/WebOGPoster.png"
+        property="twitter:image" />
+    <meta property="og:type" content="website" />
+    <meta content="summary_large_image" name="twitter:card" />
+
+    <link href="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/favicon.ico" rel="shortcut icon"
+        type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/Logo.png" rel="apple-touch-icon" />
+
+    <link rel="stylesheet" href="./styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="manifest" href="../manifest.json">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container form-section">
+            <h2 class="inter-700">QR Customizer</h2>
+            <div class="grid">
+            <div class="full">
+                <label class="inter-500">Content (URL/Text)</label>
+                <textarea id="text">Enter your text</textarea>
+            </div>
+            <div>
+                <label class="inter-500">Size (px)</label>
+                <input type="number" id="size" value="200">
+            </div>
+            <div>
+                <label class="inter-500">Format</label>
+                <select id="format">
+                    <option value="png">PNG</option>
+                    <option value="svg">SVG</option>
+                </select>
+            </div>
+            <div>
+                <label class="inter-500">Margin (Modules)</label>
+                <input type="number" id="margin" value="4">
+            </div>
+            <div>
+                <label class="inter-500">Error Correction Level</label>
+                <select id="ecLevel">
+                    <option value="L">L (7%)</option>
+                    <option value="M" selected>M (15%)</option>
+                    <option value="Q">Q (25%)</option>
+                    <option value="H">H (30%)</option>
+                </select>
+            </div>
+            <div>
+                <label class="inter-500">Foreground Color</label>
+                <input type="color" id="dark" value="#000000">
+            </div>
+            <div>
+                <label class="inter-500">Background Color</label>
+                <input type="color" id="light" value="#ffffff">
+            </div>
+            <div class="full">
+                <label class="inter-500">Logo URL (Center Image)</label>
+                <input type="text" id="centerImageUrl" placeholder="https://example.com/logo.png">
+            </div>
+            <div class="full">
+                <label class="inter-500">Caption Text</label>
+                <input type="text" id="caption" placeholder="Scan Me!">
+            </div>
+            </div>
+            <div class="button-group">
+                <button class="reset-btn inter-500" id="resetBtn">Reset</button>
+                <button class="inter-500" id="generateBtn">Generate QR Code</button>
+            </div>
+        </div>
+
+        <div class="container result-section">
+            <div id="result">
+                <img id="qrImage" alt="Generated QR Code">
+                <div id="error" class="error"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
