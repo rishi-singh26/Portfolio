@@ -2,10 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0b0b0c" media="(prefers-color-scheme: dark)">
+
     <meta http-equiv="Content-Security-Policy"
-        content="default-src 'self'; style-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; script-src 'self'; img-src 'self' https://quickchart.io; font-src 'self' https://fonts.gstatic.com">
-    <title>Create Custom QR Codes | Rishi Singh</title>
+        content="default-src 'self'; style-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; script-src 'self'; img-src 'self' https://quickchart.io https://cdn.jsdelivr.net; font-src 'self' https://fonts.gstatic.com">
+    <title>Create QR Codes | Rishi Singh</title>
     <link rel="canonical" href="https://rishisingh.in/qr" />
     <meta
         content="Create custom QR codes with advanced options. Customize colors, add logos, set error correction levels, and generate QR codes in PNG or SVG format."
@@ -37,9 +41,12 @@
     <link rel="manifest" href="../manifest.json">
 </head>
 <body>
+    <div class="notice">
+        <p class="inter-500">QR codes are generated with <a href="https://quickchart.io" target="_blank" rel="noopener noreferrer">quickchart.io</a></p>
+    </div>
     <div class="wrapper">
         <div class="container form-section">
-            <h2 class="inter-700">QR Customizer</h2>
+            <h2 class="inter-700">QR Generator</h2>
             <div class="grid">
             <div class="full">
                 <label class="inter-500">Content (URL/Text)</label>

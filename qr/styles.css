@@ -98,6 +98,8 @@ body {
     color: var(--text);
     transition: background-color var(--transition-fast) ease, color var(--transition-fast) ease;
     display: flex;
+    flex-direction: column;
+    gap: 20px;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -112,11 +114,40 @@ body {
     gap: 20px;
 }
 
+.notice {
+    background: var(--surface);
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    /* box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); */
+    transition: background-color var(--transition-fast) ease, box-shadow var(--transition-fast) ease;
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.notice p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: var(--text);
+}
+
+.notice a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+    transition: opacity var(--transition-fast) ease;
+}
+
+.notice a:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
 .container {
     background: var(--surface);
     padding: 2rem;
     border-radius: 12px;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    /* box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); */
     transition: background-color var(--transition-fast) ease, box-shadow var(--transition-fast) ease;
 }
 
