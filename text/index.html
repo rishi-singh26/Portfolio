@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0b0b0c" media="(prefers-color-scheme: dark)">
+
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; style-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; script-src 'self' https://cdn.jsdelivr.net; frame-src 'self' https://docs.google.com/; font-src 'self' https://fonts.gstatic.com; img-src 'self' https://cdn.jsdelivr.net">
+    <title>Textarea | Rishi Singh</title>
+    <link rel="canonical" href="https://rishisingh.in/" />
+    <meta
+        content="Experienced software developer in the vibrant tech landscape of southern India, building innovative solutions with precision and passion. Explore my portfolio of impactful projects."
+        name="description" />
+    <meta content="Textarea | Rishi Singh" property="og:title" />
+    <meta
+        content="Experienced software developer in the vibrant tech landscape of southern India, building innovative solutions with precision and passion. Explore my portfolio of impactful projects."
+        property="og:description" />
+    <meta content="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/WebOGPoster.png" property="og:image" />
+    <meta content="Textarea | Rishi Singh" property="twitter:title" />
+    <meta
+        content="Experienced software developer in the vibrant tech landscape of southern India, building innovative solutions with precision and passion. Explore my portfolio of impactful projects."
+        property="twitter:description" />
+    <meta content="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/WebOGPoster.png"
+        property="twitter:image" />
+    <meta property="og:type" content="website" />
+    <meta content="summary_large_image" name="twitter:card" />
+
+    <link href="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/favicon.ico" rel="shortcut icon"
+        type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/Logo.png" rel="apple-touch-icon" />
+
+    <link rel="stylesheet" href="./styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="manifest" href="./manifest.json">
+</head>
+
+<body>
+    <article contenteditable="plaintext-only" spellcheck autofocus></article>
+    <button id="button" class="noprint">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="1"></circle>
+            <circle cx="12" cy="5" r="1"></circle>
+            <circle cx="12" cy="19" r="1"></circle>
+        </svg>
+    </button>
+    <div id="menu" class="noprint" role="menu">
+        <a class="item" href="#new" target="_blank" rel="noopener noreferrer" role="menuitem">
+            <svg aria-hidden="true" focusable="false" width="22" height="22">
+                <use xlink:href="#icon-plus"></use>
+            </svg>
+            New document
+        </a>
+        <a class="item" id="qr" href="/qr" role="menuitem" target="_blank" rel="noopener noreferrer">
+            <svg aria-hidden="true" focusable="false" width="22" height="22">
+                <use xlink:href="#icon-qrcode"></use>
+            </svg>
+            Generate QR code
+        </a>
+        <a class="item" id="share-link" href="" role="menuitem">
+            <svg aria-hidden="true" focusable="false" width="22" height="22">
+                <use xlink:href="#icon-share"></use>
+            </svg>
+            Share document
+        </a>
+        <a class="item" id="save-as-html" href="" role="menuitem">
+            <svg aria-hidden="true" focusable="false" width="22" height="22">
+                <use xlink:href="#icon-text"></use>
+            </svg>
+            Save as HTML
+        </a>
+        <a class="item" id="save-as-text" href="" role="menuitem">
+            <svg aria-hidden="true" focusable="false" width="22" height="22">
+                <use xlink:href="#icon-text"></use>
+            </svg>
+            Save as TEXT
+        </a>
+        <a class="item" href="https://github.com/antonmedv/textarea" target="_blank" role="menuitem">
+            <svg aria-hidden="true" focusable="false" width="22" height="22">
+                <use xlink:href="#icon-github"></use>
+            </svg>
+            GitHub
+        </a>
+    </div>
+    <div id="notification" class="noprint"></div>
+    <script src="./script.js"></script>
+    <svg class="hidden-svg" aria-hidden="true" focusable="false">
+        <symbol id="icon-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25"
+            stroke-linecap="round" stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-plus">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M12 5l0 14" />
+            <path d="M5 12l14 0" />
+        </symbol>
+        <symbol id="icon-share" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M8 9h-1a2 2 0 0 0 -2 2v8a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-8a2 2 0 0 0 -2 -2h-1" />
+            <path d="M12 14v-11" />
+            <path d="M9 6l3 -3l3 3" />
+        </symbol>
+        <symbol id="icon-qrcode" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M4 5a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1l0 -4" />
+            <path d="M7 17l0 .01" />
+            <path d="M14 5a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1l0 -4" />
+            <path d="M7 7l0 .01" />
+            <path d="M4 15a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1l0 -4" />
+            <path d="M17 7l0 .01" />
+            <path d="M14 14l3 0" />
+            <path d="M20 14l0 .01" />
+            <path d="M14 14l0 3" />
+            <path d="M14 20l3 0" />
+            <path d="M17 17l3 0" />
+            <path d="M20 17l0 3" />
+        </symbol>
+        <symbol id="icon-github" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+                d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+        </symbol>
+        <symbol id="icon-text" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25"
+            stroke-linecap="round" stroke-linejoin="round">
+            <g id="bgCarrier" stroke-width="0"></g><g id="tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="iconCarrier"> <path d="M3 10C3 6.22876 3 4.34315 4.17157 3.17157C5.34315 2 7.22876 2 11 2H13C16.7712 2 18.6569 2 19.8284 3.17157C21 4.34315 21 6.22876 21 10V14C21 17.7712 21 19.6569 19.8284 20.8284C18.6569 22 16.7712 22 13 22H11C7.22876 22 5.34315 22 4.17157 20.8284C3 19.6569 3 17.7712 3 14V10Z" stroke="currentColor" stroke-width="1.5"></path> <path d="M8 12H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path> <path d="M8 8H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path> <path d="M8 16H13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path> </g>
+        </symbol>
+        <symbol id="icon-empty" viewBox="0 0 24 24"></symbol>
+    </svg>
+</body>
+
+</html>
