@@ -58,6 +58,15 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('caption').addEventListener('keypress', function (e) {
         if (e.key === 'Enter') generateQR();
     });
+
+    // Check for hash fragment and auto-generate QR
+    const hashText = window.location.hash.substring(1);
+    if (hashText) {
+        const decodedText = decodeURIComponent(hashText);
+        const qrText = `https://rishisingh.in/text#${decodedText}`
+        document.getElementById('text').value = qrText;
+        generateQR();
+    }
 });
 
 // Reset form function
