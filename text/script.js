@@ -246,7 +246,7 @@ function initUI() {
     button.addEventListener('click', event => {
         // if (event.clientX || event.targetTouches) ripple(event)
         menu.classList.toggle('visible')
-        qr.setAttribute('href', 'file:///Users/rishi/Developer/MyProjects/HTML/Portfolio/qr/index.html' + location.hash)
+        qr.setAttribute('href', '/qr' + location.hash)
         shareLink.setAttribute('href', location.href)
     })
 
