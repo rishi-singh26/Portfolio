@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <style>
+    .bg { fill: #0B0B0A; }
+    .fg { fill: #E6E4DF; }
+    @media (prefers-color-scheme: light) {
+      .bg { fill: #ffffff; }
+      .fg { fill: #0B0B0A; }
+    }
+  </style>
+  <rect class="bg" width="32" height="32" rx="5"/>
+  <text class="fg"
+    x="16" y="16"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="17"
+    font-weight="400"
+    text-anchor="middle"
+    dominant-baseline="central"
+    style="letter-spacing: -0.04em">RS</text>
+</svg>

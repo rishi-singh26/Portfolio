@@ -83,7 +83,7 @@ a {
 
 /* Hide elements that will be animated by JS (GSAP reveals them) */
 .js .header .logo,
-.js .header .header-email,
+.js .header-nav .header-nav-link,
 .js .hero .hero-header,
 .js .social-links-row .social-link,
 .js .btn {
@@ -94,7 +94,7 @@ a {
 
 @media (prefers-reduced-motion: reduce) {
     .js .header .logo,
-    .js .header .header-email,
+    .js .header-nav .header-nav-link,
     .js .hero .hero-header,
     .js .social-links-row .social-link,
     .js .btn {
@@ -158,16 +158,31 @@ header.canvas {
     margin: 0;
 }
 
-.header .header-email {
+.header-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+}
+
+.header-nav-link {
+    font-family: monospace;
     font-size: 12px;
-    letter-spacing: 0.04em;
     text-decoration: none;
-    height: min-content;
     color: var(--muted);
+    display: inline-flex;
+    align-items: baseline;
+    gap: 2px;
     transition: color var(--transition-fast) ease;
 }
 
-.header .header-email:hover { color: var(--accent); }
+.header-nav-link:hover { color: var(--accent); }
+
+.nav-num {
+    font-size: 12px;
+    color: var(--dim);
+    font-weight: 400;
+}
 
 /* --- Hero --- */
 .hero {
@@ -368,7 +383,8 @@ a.card:hover {
 
 @media (max-width: 768px) {
     .canvas { padding: 0 20px; }
-    .header { padding: 16px 20px; }
+    .header { padding: 16px 20px; flex-wrap: wrap; gap: 12px; }
+    .header-nav { flex-wrap: wrap; gap: 4px 16px; }
     .hero { padding: 56px 0 48px; }
     .hero .hero-header { font-size: 42px; }
     .hero .intro-desktop { display: none; }
@@ -395,7 +411,7 @@ a.card:hover {
 
 /* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
-    .social-link, .btn, .card, .hero .hero-header, .header .logo, .header .header-email {
+    .social-link, .btn, .card, .hero .hero-header, .header .logo, .header-nav-link {
         transition: none !important;
         animation: none !important;
     }

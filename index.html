@@ -29,8 +29,7 @@
     <meta property="og:type" content="website" />
     <meta content="summary_large_image" name="twitter:card" />
 
-    <link href="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/favicon.ico" rel="shortcut icon"
-        type="image/x-icon" />
+    <link rel="icon" href="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/favicon.svg" type="image/svg+xml" />
     <link href="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/Logo.png" rel="apple-touch-icon" />
 
     <link rel="stylesheet" href="./styles.css">
@@ -47,7 +46,15 @@
         <!-- Header -->
         <div class="header scrolled">
             <h1 class="logo inter-700">RS</h1>
-            <h2><a class="header-email inter-500" href="mailto:email@rishisingh.in">email@rishisingh.in</a></h2>
+            <nav class="header-nav">
+                <a class="header-nav-link inter-500" href="#experience"><span class="nav-num">01</span>Experience</a>
+                <a class="header-nav-link inter-500" href="#projects"><span class="nav-num">02</span>Projects</a>
+                <a class="header-nav-link inter-500" href="#articles"><span class="nav-num">03</span>Articles</a>
+                <a class="header-nav-link inter-500" href="#languages"><span class="nav-num">04</span>Languages</a>
+                <a class="header-nav-link inter-500" href="#frameworks"><span class="nav-num">05</span>Frameworks</a>
+                <a class="header-nav-link inter-500" href="#tools"><span class="nav-num">06</span>Tools</a>
+                <a class="header-nav-link inter-500" href="#contact"><span class="nav-num">07</span>Contact</a>
+            </nav>
         </div>
     </header>
     <main class="canvas">
@@ -96,11 +103,11 @@
             <a class="btn inter-500" href="mailto:email@rishisingh.in">email@rishisingh.in</a>
         </div>
         <!-- Work Experience -->
-        <div class="section">
+        <div id="experience" class="section">
             <h2 class="section-title inter-700">Work Experience</h2>
             <!-- Altimetrik -->
             <div class="card">
-                <img class="card-image" src="./assets/Altimetrik.png"
+                <img class="card-image" src="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/Altimetrik.png"
                     alt="Altimetrik Logo">
                 <div class="card-content">
                     <h3 class="card-title inter-700">
@@ -148,7 +155,7 @@
             <!-- <div class="divider"></div> -->
         </div>
         <!-- Projects -->
-        <div class="section">
+        <div id="projects" class="section">
             <h2 class="section-title inter-700">Projects</h2>
             <!-- TempBox -->
             <a class="card" href="https://tempbox.rishisingh.in" target="_blank">
@@ -216,7 +223,7 @@
             <!-- <div class="divider"></div> -->
         </div>
         <!-- Articles -->
-        <div class="section">
+        <div id="articles" class="section">
             <h2 class="section-title inter-700">Articles</h2>
             <a class="card"
                 href="https://medium.com/@rishi_singh/how-to-implement-end-to-end-encryption-using-pbkdf-in-flutter-a5508e7ad93e"
@@ -282,7 +289,7 @@
             <!-- <div class="divider"></div> -->
         </div>
         <!-- Languages -->
-        <div class="section">
+        <div id="languages" class="section">
             <h2 class="section-title inter-700">Programming Languages</h2>
             <!-- C# -->
             <a class="card" href="https://learn.microsoft.com/en-us/dotnet/csharp/" target="_blank">
@@ -367,7 +374,7 @@
             <!-- <div class="divider"></div> -->
         </div>
         <!-- Frameworks -->
-        <div class="section">
+        <div id="frameworks" class="section">
             <h2 class="section-title inter-700">Frameworks</h2>
             <!-- .Net Core -->
             <a class="card" href="https://dotnet.microsoft.com/en-us/apps/aspnet" target="_blank">
@@ -452,7 +459,7 @@
             <!-- <div class="divider"></div> -->
         </div>
         <!-- Tools -->
-        <div class="section">
+        <div id="tools" class="section">
             <h2 class="section-title inter-700">Tools I Use</h2>
             <!-- Visual Studio -->
             <a class="card" href="https://visualstudio.microsoft.com" target="_blank">
@@ -608,7 +615,7 @@
             <!-- <div class="divider"></div> -->
         </div>
     </main>
-    <footer class="canvas">
+    <footer class="canvas" id="contact">
         <!-- Get in touch -->
         <div class="section">
             <h2 class="section-title inter-700">Get in touch</h2>
