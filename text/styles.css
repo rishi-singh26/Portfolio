@@ -11,7 +11,7 @@
     /* base colors */
     --bg: #ffffff;
     --bg-pattern-dot: rgb(209, 213, 219);
-    --page-bg: radial-gradient(circle, var(--bg-pattern-dot) 1px, transparent 0px);
+    --page-bg: none;
     --text: #000000;
     --muted: #656363;
     --divider: #e2e2e2;
@@ -39,7 +39,7 @@
     :root {
         --bg: #0b0b0c;
         --bg-pattern-dot: rgba(60, 60, 60, 0.6);
-        --page-bg: radial-gradient(circle, var(--bg-pattern-dot) 1px, transparent 0px);
+        --page-bg: none;
         --text: #e6e6e6;
         --muted: #bdbdbd;
         --divider: #2a2a2a;
@@ -69,6 +69,7 @@ body {
     background-image: var(--page-bg);
     background-size: 20px 20px;
     background-color: var(--bg);
+    background-attachment: fixed;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
