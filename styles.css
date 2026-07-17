@@ -201,6 +201,52 @@ header.canvas {
     border-bottom: 1px solid var(--rule);
 }
 
+.hero-top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    width: 100%;
+}
+
+/* --- Hero badge (rotating circular text) --- */
+.hero-badge {
+    width: 90px;
+    height: 90px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-badge-ring {
+    width: 80%;
+    height: 80%;
+    overflow: visible;
+    animation: hero-badge-spin 16s linear infinite;
+}
+
+.hero-badge-text {
+    font-family: monospace;
+    font-size: 32px;
+    font-weight: bolder;
+    font-family: "Newsreader", Georgia, "Times New Roman", serif;
+    color: var(--ink);
+}
+
+.hero-badge-center {
+    position: absolute;
+    font-family: "Newsreader", Georgia, "Times New Roman", serif;
+    color: var(--ink);
+    font-weight: 400;
+}
+
+@keyframes hero-badge-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
 .hero .hero-header {
     font-family: "Newsreader", Georgia, "Times New Roman", serif;
     font-weight: 400;
@@ -408,6 +454,10 @@ a.card:hover {
     .hero { padding: 40px 0; }
 }
 
+@media (max-width: 500px) {
+    .hero-badge { display: none }
+}
+
 /* Performance hints */
 .header .logo, .hero .hero-header, .social-links-row .social-link, .card, .btn {
     will-change: transform, opacity;
@@ -415,7 +465,7 @@ a.card:hover {
 
 /* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
-    .social-link, .btn, .card, .hero .hero-header, .header .logo, .header-nav-link {
+    .social-link, .btn, .card, .hero .hero-header, .header .logo, .header-nav-link, .hero-badge-ring {
         transition: none !important;
         animation: none !important;
     }
