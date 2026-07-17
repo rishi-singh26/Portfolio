@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0b0b0c" media="(prefers-color-scheme: dark)">
     <meta http-equiv="Content-Security-Policy"
-        content="default-src 'self'; style-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; script-src 'self' ; frame-src 'self' https://docs.google.com/; font-src self https://fonts.gstatic.com; img-src self https://cdn.jsdelivr.net">
+        content="default-src 'self'; style-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; script-src 'self' ; frame-src 'self' https://docs.google.com/; font-src 'self' https://fonts.gstatic.com; img-src 'self' https://cdn.jsdelivr.net">
     <title>Rishi Singh - Software Developer</title>
     <link rel="canonical" href="https://rishisingh.in/" />
     <meta
@@ -25,28 +27,29 @@
     <meta property="og:type" content="website" />
     <meta content="summary_large_image" name="twitter:card" />
 
-    <link href="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/FavIcon.png" rel="shortcut icon"
-        type="image/x-icon" />
+    <link rel="icon" href="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/favicon.svg" type="image/svg+xml" />
     <link href="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/Logo.png" rel="apple-touch-icon" />
 
     <link rel="stylesheet" href="./404styles.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <main class="canvas">
+    <header class="canvas">
         <!-- Header -->
-        <div class="header">
-            <h1 class="logo inter-700"><a class="header-link" href="./index.html">RS</a></h1>
-            <h2><a class="header-email inter-500" href="mailto:email@rishisingh.in">email@rishisingh.in</a></h2>
+        <div class="header scrolled">
+            <h1 class="logo"><a class="header-link" href="./index.html">RS</a></h1>
+            <a class="header-email inter-500" href="mailto:email@rishisingh.in">email@rishisingh.in</a>
         </div>
+    </header>
+    <main class="canvas">
         <div class="hero">
-            <h1 class="hero-header inter-700">404</h1>
-            <h2 class="hero-content inter-600">It seems you are lost</h2>
-            <a class="btn inter-500" href="./index.html">rishisingh.in</a>
+            <h1 class="hero-header">404</h1>
+            <h2 class="hero-content">It seems you are lost</h2>
+            <a class="btn" href="./index.html">rishisingh.in</a>
         </div>
     </main>
 </body>
