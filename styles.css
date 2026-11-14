@@ -222,22 +222,10 @@ button:focus-visible {
 }
 
 .logo-mark {
-    display: flex;
-    width: 36px;
-    height: 36px;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    background: var(--ink);
-    color: var(--bg);
-    font-size: 13px;
+    color: var(--ink);
+    font-size: 22px;
     font-weight: 600;
     letter-spacing: 0.02em;
-}
-
-.logo-name {
-    font-size: 15px;
-    font-weight: 500;
 }
 
 .header-nav {
@@ -278,21 +266,6 @@ button:focus-visible {
 
 .hero-header em {
     color: var(--accent);
-}
-
-.hero-subtitle {
-    max-width: 480px;
-    color: var(--muted);
-    font-size: 18px;
-}
-
-.hero-actions {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 12px 28px;
-    margin-top: 8px;
 }
 
 .social-links-row {
@@ -718,6 +691,10 @@ a.card:hover {
     .hero {
         padding-top: 96px;
         padding-bottom: 104px;
+    }
+
+    .scroll-cue {
+        display: none;
     }
 
     .section {
