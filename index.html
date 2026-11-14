@@ -3,679 +3,413 @@
 
 <head>
     <meta charset="UTF-8">
-    
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
-    <meta name="theme-color" content="#0b0b0c" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#fbfaf6" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0e0e0c" media="(prefers-color-scheme: dark)">
 
     <meta http-equiv="Content-Security-Policy"
-        content="default-src 'self'; style-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; script-src 'self' https://cdn.jsdelivr.net; frame-src 'self' https://docs.google.com/; font-src 'self' https://fonts.gstatic.com; img-src 'self' https://cdn.jsdelivr.net">
+        content="default-src 'self'; style-src 'self' https://fonts.googleapis.com; script-src 'self'; font-src 'self' https://fonts.gstatic.com; img-src 'self' https://cdn.jsdelivr.net; base-uri 'self'; form-action 'self'">
     <title>Rishi Singh - Software Developer</title>
-    <link rel="canonical" href="https://rishisingh.in/" />
+    <link rel="canonical" href="https://rishisingh.in/">
     <meta
-        content="Experienced software developer in the vibrant tech landscape of southern India, building innovative solutions with precision and passion. Explore my portfolio of impactful projects."
-        name="description" />
-    <meta content="Rishi Singh - Software Developer" property="og:title" />
+        content="Experienced software developer in the vibrant tech landscape of India, building innovative solutions with precision and passion. Explore my portfolio of impactful projects."
+        name="description">
+    <meta content="Rishi Singh - Software Developer" property="og:title">
     <meta
-        content="Experienced software developer in the vibrant tech landscape of southern India, building innovative solutions with precision and passion. Explore my portfolio of impactful projects."
-        property="og:description" />
-    <meta content="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/WebOGPoster.png" property="og:image" />
-    <meta content="Rishi Singh - Software Developer" property="twitter:title" />
+        content="Experienced software developer in the vibrant tech landscape of India, building innovative solutions with precision and passion. Explore my portfolio of impactful projects."
+        property="og:description">
+    <meta content="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/WebOGPoster.png" property="og:image">
+    <meta content="Rishi Singh - Software Developer" property="twitter:title">
     <meta
-        content="Experienced software developer in the vibrant tech landscape of southern India, building innovative solutions with precision and passion. Explore my portfolio of impactful projects."
-        property="twitter:description" />
-    <meta content="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/WebOGPoster.png"
-        property="twitter:image" />
-    <meta property="og:type" content="website" />
-    <meta content="summary_large_image" name="twitter:card" />
+        content="Experienced software developer in the vibrant tech landscape of India, building innovative solutions with precision and passion. Explore my portfolio of impactful projects."
+        property="twitter:description">
+    <meta content="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/WebOGPoster.png" property="twitter:image">
+    <meta property="og:type" content="website">
+    <meta content="summary_large_image" name="twitter:card">
 
-    <link rel="icon" href="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/favicon.svg" type="image/svg+xml" />
-    <link href="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/Logo.png" rel="apple-touch-icon" />
+    <link rel="icon" href="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/favicon.svg" type="image/svg+xml">
+    <link href="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/Logo.png" rel="apple-touch-icon">
 
     <link rel="stylesheet" href="./styles.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Instrument+Serif:ital@0;1&amp;display=swap" rel="stylesheet">
 
     <link rel="manifest" href="./manifest.json">
 </head>
 
 <body>
-    <header class="canvas">
-        <!-- Header -->
-        <div class="header scrolled">
-            <h1 class="logo inter-700">RS</h1>
-            <nav class="header-nav">
-                <a class="header-nav-link inter-500" href="#experience"><span class="nav-num">01</span>Experience</a>
-                <a class="header-nav-link inter-500" href="#projects"><span class="nav-num">02</span>Projects</a>
-                <a class="header-nav-link inter-500" href="#articles"><span class="nav-num">03</span>Articles</a>
-                <a class="header-nav-link inter-500" href="#languages"><span class="nav-num">04</span>Languages</a>
-                <a class="header-nav-link inter-500" href="#frameworks"><span class="nav-num">05</span>Frameworks</a>
-                <a class="header-nav-link inter-500" href="#tools"><span class="nav-num">06</span>Tools</a>
-                <a class="header-nav-link inter-500" href="#contact"><span class="nav-num">07</span>Contact</a>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="canvas header">
+            <a class="logo" href="#top" aria-label="Rishi Singh, home">
+                <span class="logo-mark">RS</span>
+                <span class="logo-name">Rishi Singh</span>
+            </a>
+            <nav class="header-nav" aria-label="Primary">
+                <a class="nav-link link" href="#experience">Experience</a>
+                <a class="nav-link link" href="#projects">Projects</a>
+                <a class="nav-link link" href="#articles">Writing</a>
+                <a class="nav-link link" href="#stack">Stack</a>
             </nav>
+            <a class="btn small link" href="#contact">Get in touch</a>
         </div>
     </header>
-    <main class="canvas">
-        <!-- hero -->
-        <div class="hero">
-            <h1 class="hero-header inter-700">Rishi Singh,<br>Software Developer</h1>
-            <div class="social-links-row" headerlinks>
-                <a class="inter-500 social-link" target="_blank"
-                    href="https://www.linkedin.com/in/rishi-singh-b2226415b">
-                    <picture>
-                        <source
-                            srcset="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/linkedin-white-icon.svg"
-                            media="(prefers-color-scheme: dark)">
-                        <img class="social-image"
-                            src="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/linkedin-icon.svg"
-                            data-src-light="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/linkedin-icon.svg"
-                            data-src-dark="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/linkedin-white-icon.svg"
-                            alt="Linkedin logo">
-                    </picture>
-                </a>
-                <a class="inter-500 social-link" target="_blank" href="https://medium.com/@rishi_singh">
-                    <picture>
-                        <source
-                            srcset="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/medium-white-icon.svg"
-                            media="(prefers-color-scheme: dark)">
-                        <img class="social-image"
-                            src="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/medium-icon.svg"
-                            data-src-light="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/medium-icon.svg"
-                            data-src-dark="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/medium-white-icon.svg"
-                            alt="Medium Logo">
-                    </picture>
-                </a>
-                <a class="inter-500 social-link" target="_blank" href="https://www.github.com/rishi-singh26">
-                    <picture>
-                        <source
-                            srcset="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/github-white-icon.svg"
-                            media="(prefers-color-scheme: dark)">
-                        <img class="social-image"
-                            src="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/github-icon.svg"
-                            data-src-light="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/github-icon.svg"
-                            data-src-dark="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/github-white-icon.svg"
-                            alt="Github Logo">
-                    </picture>
-                </a>
+
+    <main id="main">
+        <!-- Hero -->
+        <section id="top" class="canvas hero">
+            <h1 class="hero-header serif">Hi, I'm Rishi. I build software with<br/><em>precision and passion.</em></h1>
+            <p class="hero-subtitle">Senior Engineer at Altimetrik, working across product and platform.</p>
+            <div class="hero-actions">
+                <a class="btn link" href="#projects">See my work &darr;</a>
+                <a class="text-link link" href="#contact">Get in touch &rarr;</a>
             </div>
-            <a class="btn inter-500" href="mailto:email@rishisingh.in">email@rishisingh.in</a>
-        </div>
-        <!-- Work Experience -->
-        <div id="experience" class="section">
-            <h2 class="section-title inter-700">Work Experience</h2>
-            <!-- Altimetrik -->
-            <div class="card">
-                <img class="card-image" src="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/Altimetrik.png"
-                    alt="Altimetrik Logo">
-                <div class="card-content">
-                    <h3 class="card-title inter-700">
-                        Senior Engineer - Product and Platform Engineering
-                    </h3>
-                    <p class="card-subtitle inter-500">Altimetrik, Feb 2026 - Present</p>
-                </div>
-            </div>
-            <!-- <div class="divider"></div> -->
-            <!-- Accenture -->
-            <div class="card">
-                <img class="card-image" src="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/Accenture.svg"
-                    alt="Accenture Logo">
-                <div class="card-content">
-                    <h3 class="card-title inter-700">
-                        Custom Software Development Analyst
-                    </h3>
-                    <p class="card-subtitle inter-500">Accenture, Aug 2021 - Feb 2026</p>
-                </div>
-            </div>
-            <!-- <div class="divider"></div> -->
-            <!-- Krenai -->
-            <div class="card">
-                <img class="card-image" src="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/Krenai.png"
-                    alt="Krenai Logo">
-                <div class="card-content">
-                    <h3 class="card-title inter-700">
-                        Front-End Developer Intern
-                    </h3>
-                    <p class="card-subtitle inter-500">Krenai, Jul 2020 - Sep 2020</p>
-                </div>
-            </div>
-            <!-- <div class="divider"></div> -->
-            <!-- CronJ -->
-            <div class="card">
-                <img class="card-image" src="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/CronJ.svg"
-                    alt="CronJ Logo">
-                <div class="card-content">
-                    <h3 class="card-title inter-700">
-                        Summer Intern
-                    </h3>
-                    <p class="card-subtitle inter-500">CronJ, Jun 2019 - Jul 2019</p>
-                </div>
-            </div>
-            <!-- <div class="divider"></div> -->
-        </div>
-        <!-- Projects -->
-        <div id="projects" class="section">
-            <h2 class="section-title inter-700">Projects</h2>
-            <!-- TempBox -->
-            <a class="card" href="https://tempbox.rishisingh.in" target="_blank">
-                <img class="card-image" src="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/TempBox.png"
-                    alt="TempBox application icon - A white envelope on a red background">
-                <div class="card-content">
-                    <h3 class="card-title inter-700">
-                        TempBox
-                    </h3>
-                    <p class="card-subtitle inter-500">TempBox lets you create disposable emails on the
-                        fly. Protect your privacy, manage subscriptions easily, and keep your main inbox clutter-free.
-                    </p>
-                </div>
-            </a>
-            <!-- <div class="divider"></div> -->
-            <!-- Steganograph -->
-            <a class="card" href="https://rishi-singh26.github.io/stegno/" target="_blank">
-                <img class="card-image" src="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/Stegno.svg"
-                    alt="Stegno application logo - A dino standing in a white background">
-                <div class="card-content">
-                    <h3 class="card-title inter-700">
-                        Stegno
-                    </h3>
-                    <p class="card-subtitle inter-500">An app that uses LSB steganography to securely hide and extract
-                        text and images within images, with capacity checks and easy embedding.</p>
-                </div>
-            </a>
-            <!-- <div class="divider"></div> -->
-            <!-- Neotris -->
-            <a class="card" href="https://github.com/rishi-singh26/Neotris" target="_blank">
-                <img class="card-image" src="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/Neotris.png"
-                    alt="A minimalist app icon featuring a rounded square shape in orange gradient with two nested squares in the center. The outer square is white/light cream-colored with rounded corners, and the innermost square is a lighter cream color. The design has a subtle shadow effect giving it a modern, three-dimensional appearance against the orange background.">
-                <div class="card-content">
-                    <h3 class="card-title inter-700">
-                        Neotris
-                    </h3>
-                    <p class="card-subtitle inter-500">Vibrant twist on the classic block-dropping puzzle</p>
-                </div>
-            </a>
-            <!-- <div class="divider"></div> -->
-            <!-- JotDown -->
-            <a class="card" href="https://jotdown.rishisingh.in" target="_blank">
-                <img class="card-image" src="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/JotDown.png"
-                    alt="Menu bar extension for Apple Notes. Create notes from menubar with quick access keyboard shortcuts.">
-                <div class="card-content">
-                    <h3 class="card-title inter-700">
-                        JotDown
-                    </h3>
-                    <p class="card-subtitle inter-500">Menu bar extenstion for Apple Notes</p>
-                </div>
-            </a>
-            <!-- <div class="divider"></div> -->
-            <!-- Digipin Manager -->
-            <a class="card" href="https://github.com/rishi-singh26/DigipinManager" target="_blank">
-                <img class="card-image" src="https://cdn.jsdelivr.net/gh/rishi-singh26/DigipinManager@main/DigipinManager/Assets.xcassets/PresentationIcon.imageset/DigipinManager.png"
-                    alt="Digipin Manager application icon - A white location marker on a blue background">
-                <div class="card-content">
-                    <h3 class="card-title inter-700">
-                        Digipin Manager
-                    </h3>
-                    <p class="card-subtitle inter-500">A simple app to manage your Digipins</p>
-                </div>
-            </a>
-            <!-- <div class="divider"></div> -->
-            <!-- Map GIS -->
-            <div class="card">
-                <img class="card-image"
-                    src="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/MapGIS.png"
-                    alt="Map GIS application icon defination">
-                <div class="card-content">
-                    <h3 class="card-title inter-700">
-                        Map GIS
-                    </h3>
-                    <p class="card-subtitle inter-500">In Progress</p>
-                </div>
-            </div>
-            <!-- <div class="divider"></div> -->
-        </div>
-        <!-- Articles -->
-        <div id="articles" class="section">
-            <h2 class="section-title inter-700">Articles</h2>
-            <a class="card"
-                href="https://medium.com/@rishi_singh/how-to-implement-end-to-end-encryption-using-pbkdf-in-flutter-a5508e7ad93e"
-                target="_blank">
-                <div class="card-content">
-                    <h3 class="card-title inter-700">
-                        Implement zero knowledge encryption using PBKDF in Flutter
-                    </h3>
-                    <p class="card-subtitle inter-500">In this article, we’ll look at how to set up an end-to-end
-                        encryption system to protect user data.</p>
-                </div>
-            </a>
-            <!-- <div class="divider"></div> -->
-            <a class="card"
-                href="https://medium.com/@rishi_singh/i-created-an-app-to-perform-basic-lsb-steganography-its-not-that-hard-525fe5e4f903"
-                target="_blank">
-                <div class="card-content">
-                    <h3 class="card-title inter-700">
-                        I created an app to perform basic steganography on images; it’s not that hard
-                    </h3>
-                    <p class="card-subtitle inter-500">Steganography is the process of hiding information (usually text,
-                        images, or audio) within other digital files, such as images, audio, or video. In LSB
-                        steganography we achieve this by manipulating the LSB (Least Significant Bits) of the media
-                        file.</p>
-                </div>
-            </a>
-            <!-- <div class="divider"></div> -->
-            <a class="card"
-                href="https://medium.com/@rishi_singh/create-a-draggable-scrollable-bottomsheet-with-flutter-0ec50d93a3b9"
-                target="_blank">
-                <div class="card-content">
-                    <h3 class="card-title inter-700">
-                        Create a Draggable Scrollable BottomSheet with Flutter
-                    </h3>
-                    <p class="card-subtitle inter-500">Let’s learn to implement a draggable and scrollable bottom sheet
-                        in flutter which can be added on a map or anywhere you want.</p>
-                </div>
-            </a>
-            <!-- <div class="divider"></div> -->
-            <a class="card"
-                href="https://medium.com/@rishi_singh/designing-platform-specific-uis-in-flutter-a-comprehensive-guide-61f444b6bf64"
-                target="_blank">
-                <div class="card-content">
-                    <h3 class="card-title inter-700">
-                        Designing Platform-Specific UIs in Flutter: A Comprehensive Guide
-                    </h3>
-                    <p class="card-subtitle inter-500">In this article, we’ll explore how to create platform-specific
-                        UIs in Flutter. We’ll ensure our app follows the Material 3 design system on Android, Fluent UI
-                        on Windows, and Human Interface Guidelines (HIG) on iOS and macOS.</p>
-                </div>
-            </a>
-            <!-- <div class="divider"></div> -->
-            <a class="card" href="https://medium.com/@rishi_singh/how-to-blur-a-widget-in-flutter-edc32bfc6eea"
-                target="_blank">
-                <div class="card-content">
-                    <h3 class="card-title inter-700">
-                        How to Blur a Widget in Flutter
-                    </h3>
-                    <p class="card-subtitle inter-500">Blurring widgets in Flutter can be a daunting task for beginners,
-                        but fear not! In this article, we will go through the process of blurring widgets.</p>
-                </div>
-            </a>
-            <!-- <div class="divider"></div> -->
-        </div>
-        <!-- Languages -->
-        <div id="languages" class="section">
-            <h2 class="section-title inter-700">Programming Languages</h2>
-            <!-- C# -->
-            <a class="card" href="https://learn.microsoft.com/en-us/dotnet/csharp/" target="_blank">
-                <img class="card-image" small
-                    src="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/CSharp.svg" alt="C Sharp logo">
-                <div class="card-content">
-                    <h3 class="card-title inter-700">
-                        C#
-                    </h3>
-                    <p class="card-subtitle inter-500">C# is Microsoft's type-safe, object-oriented language that runs
-                        on the .NET platform.</p>
-                </div>
-            </a>
-            <!-- <div class="divider"></div> -->
-            <!-- JavaScript -->
-            <a class="card" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-                <img class="card-image" small
-                    src="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/JavaScript.svg"
-                    alt="JavaScript logo">
-                <div class="card-content">
-                    <h3 class="card-title inter-700">
-                        JavaScript
-                    </h3>
-                    <p class="card-subtitle inter-500">Dynamic, versatile programming language for web development and
-                        interactivity.</p>
-                </div>
-            </a>
-            <!-- <div class="divider"></div> -->
-            <!-- TypeScript -->
-            <a class="card" href="https://www.typescriptlang.org" target="_blank">
-                <img class="card-image" small
-                    src="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/TypeScript.svg"
-                    alt="TypeScript logo">
-                <div class="card-content">
-                    <h3 class="card-title inter-700">
-                        TypeScript
-                    </h3>
-                    <p class="card-subtitle inter-500">A typed superset of JavaScript that enhances code reliability and
-                        clarity.</p>
-                </div>
-            </a>
-            <!-- <div class="divider"></div> -->
-            <!-- Dart -->
-            <a class="card" href="https://dart.dev" target="_blank">
-                <img class="card-image" small src="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/Dart.svg"
-                    alt="Dart Language logo">
-                <div class="card-content">
-                    <h3 class="card-title inter-700">
-                        Dart
-                    </h3>
-                    <p class="card-subtitle inter-500">A language optimized for building fast, scalable web and mobile
-                        apps.
-                    </p>
-                </div>
-            </a>
-            <!-- <div class="divider"></div> -->
-            <!-- Go -->
-            <!-- <a class="card" href="https://go.dev" target="_blank">
-                <img class="card-image" small src="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/Go.svg"
-                    alt="Go lang logo">
-                <div class="card-content">
-                    <h3 class="card-title inter-700">
-                        Go
-                    </h3>
-                    <p class="card-subtitle inter-500">A statically typed, compiled language designed for simplicity and
-                        efficiency.</p>
-                </div>
-            </a> -->
-            <!-- <div class="divider"></div> -->
-            <!-- Swift -->
-            <a class="card" href="https://www.swift.org" target="_blank">
-                <img class="card-image" small src="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/Swift.svg"
-                    alt="Swift logo">
-                <div class="card-content">
-                    <h3 class="card-title inter-700">
-                        Swift
-                    </h3>
-                    <p class="card-subtitle inter-500">Swift is a fast, modern, and safe programming language for Apple
-                        platforms.</p>
-                </div>
-            </a>
-            <!-- <div class="divider"></div> -->
-        </div>
-        <!-- Frameworks -->
-        <div id="frameworks" class="section">
-            <h2 class="section-title inter-700">Frameworks</h2>
-            <!-- .Net Core -->
-            <a class="card" href="https://dotnet.microsoft.com/en-us/apps/aspnet" target="_blank">
-                <img class="card-image" small
-                     src="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/DotNet.png"
-                     alt="ASP.NET Core logo">
-                <div class="card-content">
-                    <h3 class="card-title inter-700">
-                        ASP.NET Core
-                    </h3>
-                    <p class="card-subtitle inter-500">Free. Cross-platform. Open source. A framework for building web
-                        apps and services with .NET and C#.</p>
-                </div>
-            </a>
-            <!-- <div class="divider"></div> -->
-            <!-- Angular -->
-            <a class="card" href="https://angular.dev" target="_blank">
-                <img class="card-image" small
-                    src="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/Angular.svg" alt="Angular logo">
-                <div class="card-content">
-                    <h3 class="card-title inter-700">
-                        Angular
-                    </h3>
-                    <p class="card-subtitle inter-500">A TypeScript-based framework for building dynamic, single-page
-                        web applications.</p>
-                </div>
-            </a>
-            <!-- <div class="divider"></div> -->
-            <!-- React -->
-            <a class="card" href="https://react.dev" target="_blank">
-                <img class="card-image" small src="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/React.svg"
-                    alt="React logo">
-                <div class="card-content">
-                    <h3 class="card-title inter-700">
-                        React
-                    </h3>
-                    <p class="card-subtitle inter-500">A JavaScript library for building interactive user interfaces,
-                        primarily web.</p>
-                </div>
-            </a>
-            <!-- <div class="divider"></div> -->
-            <!-- Flutter -->
-            <a class="card" href="https://flutter.dev" target="_blank">
-                <img class="card-image" small
-                    src="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/Flutter.svg" alt="Flutter logo">
-                <div class="card-content">
-                    <h3 class="card-title inter-700">
-                        Flutter
-                    </h3>
-                    <p class="card-subtitle inter-500">A UI toolkit for building natively compiled applications for
-                        mobile, web, and desktop.</p>
-                </div>
-            </a>
-            <!-- <div class="divider"></div> -->
-            <!-- SwiftUI -->
-            <a class="card" href="https://developer.apple.com/swiftui/" target="_blank">
-                <img class="card-image" small
-                    src="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/SwiftUI.svg" alt="SwiftUI logo">
-                <div class="card-content">
-                    <h3 class="card-title inter-700">
-                        SwiftUI
-                    </h3>
-                    <p class="card-subtitle inter-500">SwiftUI is a framework for building user interfaces with
-                        declarative syntax in Swift.
-                    </p>
-                </div>
-            </a>
-            <!-- <div class="divider"></div> -->
-            <!-- React Native -->
-            <a class="card" href="https://reactnative.dev" target="_blank">
-                <img class="card-image" small
-                    src="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/React Native.svg"
-                    alt="React Native logo">
-                <div class="card-content">
-                    <h3 class="card-title inter-700">
-                        React Native
-                    </h3>
-                    <p class="card-subtitle inter-500">A framework for building mobile apps using JavaScript and React.
-                    </p>
-                </div>
-            </a>
-            <!-- <div class="divider"></div> -->
-        </div>
-        <!-- Tools -->
-        <div id="tools" class="section">
-            <h2 class="section-title inter-700">Tools I Use</h2>
-            <!-- Visual Studio -->
-            <a class="card" href="https://visualstudio.microsoft.com" target="_blank">
-                <img class="card-image" small
-                    src="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/VisualStudio.svg"
-                    alt="Visual studio application icon">
-                <div class="card-content">
-                    <h3 class="card-title inter-700">
-                        Visual Studio
-                    </h3>
-                    <p class="card-subtitle inter-500">Visual Studio is a powerful, feature-rich integrated development
-                        environment for multiple languages.</p>
-                </div>
-            </a>
-            <!-- <div class="divider"></div> -->
-            <!-- SQL Server Management Studio -->
-            <a class="card" href="https://learn.microsoft.com/en-us/ssms/sql-server-management-studio-ssms"
-                target="_blank">
-                <img class="card-image" small src="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/SSMS.png"
-                    alt="SQL Server Management Studio application icon">
-                <div class="card-content">
-                    <h3 class="card-title inter-700">
-                        SQL Server Management Studio
-                    </h3>
-                    <p class="card-subtitle inter-500">SQL Server Management Studio (SSMS) is a Microsoft tool for
-                        managing SQL Server databases.</p>
-                </div>
-            </a>
-            <!-- <div class="divider"></div> -->
-            <!-- Rider -->
-            <a class="card" href="https://www.jetbrains.com/rider/" target="_blank">
-                <img class="card-image" small
-                     src="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/Rider.svg"
-                     alt="JetBrains Rider icon">
-                <div class="card-content">
-                    <h3 class="card-title inter-700">
-                        JetBrains Rider
-                    </h3>
-                    <p class="card-subtitle inter-500">JetBrains Rider is a leading cross-platform IDE for .NET and
-                        game developers looking to boost productivity and streamline their development process.</p>
-                </div>
-            </a>
-            <!-- <div class="divider"></div> -->
-            <!-- VS Code -->
-            <a class="card" href="https://code.visualstudio.com" target="_blank">
-                <img class="card-image" small
-                    src="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/VsCode.svg"
-                    alt="Visual studio code application icon">
-                <div class="card-content">
-                    <h3 class="card-title inter-700">
-                        Visual Studio Code
-                    </h3>
-                    <p class="card-subtitle inter-500">A lightweight, powerful code editor with debugging and extensions
-                        support.</p>
-                </div>
-            </a>
-            <!-- <div class="divider"></div> -->
-            <!-- Xcode -->
-            <a class="card" href="https://developer.apple.com/xcode/" target="_blank">
-                <img class="card-image" small src="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/Xcode.svg"
-                    alt="Xcode application icon">
-                <div class="card-content">
-                    <h3 class="card-title inter-700">
-                        Xcode
-                    </h3>
-                    <p class="card-subtitle inter-500">Apple's IDE for developing applicationd for iOS, macOS, and other
-                        Apple devices.</p>
-                </div>
-            </a>
-            <!-- <div class="divider"></div> -->
-            <!-- CodeEdit -->
-            <!-- <a class="card" href="https://www.codeedit.app" target="_blank">
-                <img class="card-image" small
-                    src="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/CodeEdit.svg"
-                    alt="Code Edit application icon">
-                <div class="card-content">
-                    <h3 class="card-title inter-700">
-                        CodeEdit
-                    </h3>
-                    <p class="card-subtitle inter-500">I've been trying out CodeEdit lately - it's this new open-source
-                        editor for Mac. It's still pretty new, but I love how lightweight and snappy it feels compared
-                        to some of the bigger IDEs.</p>
-                </div>
-            </a> -->
-            <!-- <div class="divider"></div> -->
-            <!-- Table Plus -->
-            <a class="card" href="https://tableplus.com" target="_blank">
-                <img class="card-image" small
-                    src="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/TablePlus.svg"
-                    alt="TablePlus application icon">
-                <div class="card-content">
-                    <h3 class="card-title inter-700">
-                        TablePlus
-                    </h3>
-                    <p class="card-subtitle inter-500">A modern, native database management tool for various databases
-                        for macOS.</p>
-                </div>
-            </a>
-            <!-- <div class="divider"></div> -->
-            <!-- Firebase -->
-            <!-- <a class="card" href="https://firebase.google.com" target="_blank">
-                <img class="card-image" small
-                    src="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/FireBase.svg" alt="Firebase logo">
-                <div class="card-content">
-                    <h3 class="card-title inter-700">
-                        Firebase
-                    </h3>
-                    <p class="card-subtitle inter-500">Google's platform for app development, backend, and real-time
-                        services.</p>
-                </div>
-            </a> -->
-            <!-- <div class="divider"></div> -->
-            <!-- Figma -->
-            <a class="card" href="https://www.figma.com" target="_blank">
-                <img class="card-image" small src="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/Figma.svg"
-                    alt="Figma application icon">
-                <div class="card-content">
-                    <h3 class="card-title inter-700">
-                        Figma
-                    </h3>
-                    <p class="card-subtitle inter-500">A collaborative design tool for creating UI/UX and prototypes.
-                    </p>
-                </div>
-            </a>
-            <!-- <div class="divider"></div> -->
-            <!-- Excalidraw -->
-            <a class="card" href="https://excalidraw.com" target="_blank">
-                <img class="card-image" small
-                    src="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/Excalidraw.svg"
-                    alt="Excalidraw web-application icon">
-                <div class="card-content">
-                    <h3 class="card-title inter-700">
-                        Excalidraw
-                    </h3>
-                    <p class="card-subtitle inter-500">An open-source, collaborative whiteboard tool for sketching
-                        diagrams and visuals.</p>
-                </div>
-            </a>
-            <!-- <div class="divider"></div> -->
-            <!-- Notion -->
-            <a class="card" href="https://www.notion.so" target="_blank">
-                <img class="card-image" small
-                    src="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/Notion.svg"
-                    alt="Notion application icon">
-                <div class="card-content">
-                    <h3 class="card-title inter-700">
-                        Notion
-                    </h3>
-                    <p class="card-subtitle inter-500">An all-in-one workspace for notes, tasks, databases, and
-                        collaboration.</p>
-                </div>
-            </a>
-            <!-- <div class="divider"></div> -->
-        </div>
-    </main>
-    <footer class="canvas" id="contact">
-        <!-- Get in touch -->
-        <div class="section">
-            <h2 class="section-title inter-700">Get in touch</h2>
-            <br>
-            <a class="btn footer inter-500" href="mailto:email@rishisingh.in">email@rishisingh.in</a>
-            <br>
             <div class="social-links-row">
-                <a class="inter-500 social-link" target="_blank"
-                    href="https://www.linkedin.com/in/rishi-singh-b2226415b">
-                    <picture>
-                        <source
-                            srcset="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/linkedin-white-icon.svg"
-                            media="(prefers-color-scheme: dark)">
-                        <img class="social-image"
-                            src="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/linkedin-icon.svg"
-                            data-src-light="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/linkedin-icon.svg"
-                            data-src-dark="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/linkedin-white-icon.svg"
-                            alt="Linkedin logo">
-                    </picture>
-                </a>
-                <a class="inter-500 social-link" target="_blank" href="https://medium.com/@rishi_singh">
-                    <picture>
-                        <source
-                            srcset="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/medium-white-icon.svg"
-                            media="(prefers-color-scheme: dark)">
-                        <img class="social-image"
-                            src="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/medium-icon.svg"
-                            data-src-light="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/medium-icon.svg"
-                            data-src-dark="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/medium-white-icon.svg"
-                            alt="Medium Logo">
-                    </picture>
-                </a>
-                <a class="inter-500 social-link" target="_blank" href="https://www.github.com/rishi-singh26">
-                    <picture>
-                        <source
-                            srcset="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/github-white-icon.svg"
-                            media="(prefers-color-scheme: dark)">
-                        <img class="social-image"
-                            src="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/github-icon.svg"
-                            data-src-light="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/github-icon.svg"
-                            data-src-dark="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/github-white-icon.svg"
-                            alt="Github Logo">
-                    </picture>
-                </a>
+                <a class="social-link link" target="_blank" rel="noopener noreferrer"
+                    href="https://www.linkedin.com/in/rishi-singh-b2226415b" aria-label="LinkedIn (opens in a new tab)">LinkedIn &#8599;</a>
+                <a class="social-link link" target="_blank" rel="noopener noreferrer"
+                    href="https://github.com/rishi-singh26" aria-label="GitHub (opens in a new tab)">GitHub &#8599;</a>
+                <a class="social-link link" target="_blank" rel="noopener noreferrer"
+                    href="https://medium.com/@rishi_singh" aria-label="Medium (opens in a new tab)">Medium &#8599;</a>
             </div>
-            <!-- <p class="inter-400">Copyright © 2024-2025 Rishi Singh. All Rights Reserved</p> -->
-            <br>
-            <br>
+            <a class="scroll-cue link" href="#experience" aria-label="Scroll down to experience">
+                <span class="scroll-cue-label">Scroll</span>
+                <span class="scroll-cue-line" aria-hidden="true"></span>
+            </a>
+        </section>
+
+        <!-- Work Experience -->
+        <section id="experience" class="canvas section section-split">
+            <div class="section-head">
+                <p class="eyebrow">01 &middot; Experience</p>
+                <h2 class="section-title serif">Where I&rsquo;ve <em>worked</em></h2>
+            </div>
+            <ol class="section-body">
+                <li class="job">
+                    <p class="job-date">Feb 2026 &middot; Now</p>
+                    <div class="job-info">
+                        <h3 class="job-title">Senior Engineer</h3>
+                        <p class="job-company">Altimetrik &middot; Product and Platform Engineering</p>
+                    </div>
+                </li>
+                <li class="job">
+                    <p class="job-date">Aug 2021 &middot; Feb 2026</p>
+                    <div class="job-info">
+                        <h3 class="job-title">Custom Software Development Analyst</h3>
+                        <p class="job-company">Accenture</p>
+                    </div>
+                </li>
+                <li class="job">
+                    <p class="job-date">Jul 2020 &middot; Sep 2020</p>
+                    <div class="job-info">
+                        <h3 class="job-title">Front-End Developer Intern</h3>
+                        <p class="job-company">Krenai</p>
+                    </div>
+                </li>
+                <li class="job">
+                    <p class="job-date">Jun 2019 &middot; Jul 2019</p>
+                    <div class="job-info">
+                        <h3 class="job-title">Summer Intern</h3>
+                        <p class="job-company">CronJ</p>
+                    </div>
+                </li>
+            </ol>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="canvas section section-stack">
+            <div class="section-head">
+                <p class="eyebrow">02 &middot; Projects</p>
+                <h2 class="section-title serif">Things I&rsquo;ve <em>made</em></h2>
+                <p class="section-intro">Small, focused tools I built because I wanted them to exist.</p>
+            </div>
+            <div class="card-grid">
+            <!-- TempBox -->
+            <a class="card link" href="https://tempbox.rishisingh.in" target="_blank" rel="noopener noreferrer">
+                <div class="card-top">
+                    <img class="card-image" src="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/TempBox.png" alt="TempBox application icon" width="56" height="56" loading="lazy">
+                    <span class="arrow" aria-hidden="true">&#8599;</span>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">TempBox</h3>
+                    <p class="card-subtitle">Create disposable email addresses to protect your privacy and keep your inbox clean.</p>
+                </div>
+            </a>
+            <!-- Stegno -->
+            <a class="card link" href="https://rishi-singh26.github.io/stegno/" target="_blank" rel="noopener noreferrer">
+                <div class="card-top">
+                    <img class="card-image" src="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/Stegno.svg" alt="Stegno application icon" width="56" height="56" loading="lazy">
+                    <span class="arrow" aria-hidden="true">&#8599;</span>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Stegno</h3>
+                    <p class="card-subtitle">Hide text and images inside other images using LSB steganography.</p>
+                </div>
+            </a>
+            <!-- JotDown -->
+            <a class="card link" href="https://jotdown.rishisingh.in" target="_blank" rel="noopener noreferrer">
+                <div class="card-top">
+                    <img class="card-image" src="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/JotDown.png" alt="JotDown application icon" width="56" height="56" loading="lazy">
+                    <span class="arrow" aria-hidden="true">&#8599;</span>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">JotDown</h3>
+                    <p class="card-subtitle">A menu bar extension for quick access to Apple Notes.</p>
+                </div>
+            </a>
+            <!-- Digipin Manager -->
+            <a class="card link" href="https://github.com/rishi-singh26/DigipinManager" target="_blank" rel="noopener noreferrer">
+                <div class="card-top">
+                    <img class="card-image" src="https://cdn.jsdelivr.net/gh/rishi-singh26/DigipinManager@main/DigipinManager/Assets.xcassets/PresentationIcon.imageset/DigipinManager.png" alt="Digipin Manager application icon" width="56" height="56" loading="lazy">
+                    <span class="arrow" aria-hidden="true">&#8599;</span>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Digipin Manager</h3>
+                    <p class="card-subtitle">An app for saving, organising and managing Digipins.</p>
+                </div>
+            </a>
+            <!-- Neotris -->
+            <a class="card link" href="https://github.com/rishi-singh26/Neotris" target="_blank" rel="noopener noreferrer">
+                <div class="card-top">
+                    <img class="card-image" src="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/Neotris.png" alt="Neotris application icon" width="56" height="56" loading="lazy">
+                    <span class="arrow" aria-hidden="true">&#8599;</span>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Neotris</h3>
+                    <p class="card-subtitle">A block-dropping puzzle game with a fresh coat of paint.</p>
+                </div>
+            </a>
+            <!-- Map GIS -->
+            <div class="card in-progress">
+                <div class="card-top">
+                    <img class="card-image" src="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/MapGIS.png" alt="Map GIS application icon" width="56" height="56" loading="lazy">
+                    <span class="badge">In progress</span>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Map GIS</h3>
+                    <p class="card-subtitle">Something new with maps, coming soon.</p>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- Articles -->
+        <section id="articles" class="canvas section section-split">
+            <div class="section-head">
+                <p class="eyebrow">03 &middot; Writing</p>
+                <h2 class="section-title serif">Notes on <em>Flutter</em> and more</h2>
+                <a class="all-articles link" href="https://medium.com/@rishi_singh" target="_blank" rel="noopener noreferrer">All articles on Medium &#8599;</a>
+            </div>
+            <ul class="section-body article-list">
+                    <li>
+                        <a class="row link" href="https://medium.com/@rishi_singh/how-to-implement-end-to-end-encryption-using-pbkdf-in-flutter-a5508e7ad93e" target="_blank" rel="noopener noreferrer" aria-label="Zero-knowledge encryption using PBKDF in Flutter (opens in a new tab)">
+                            <span>Zero-knowledge encryption using PBKDF in Flutter</span>
+                            <span class="arrow" aria-hidden="true">&#8599;</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="row link" href="https://medium.com/@rishi_singh/i-created-an-app-to-perform-basic-lsb-steganography-its-not-that-hard-525fe5e4f903" target="_blank" rel="noopener noreferrer" aria-label="Building a basic LSB steganography app (opens in a new tab)">
+                            <span>Building a basic LSB steganography app</span>
+                            <span class="arrow" aria-hidden="true">&#8599;</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="row link" href="https://medium.com/@rishi_singh/create-a-draggable-scrollable-bottomsheet-with-flutter-0ec50d93a3b9" target="_blank" rel="noopener noreferrer" aria-label="Creating a draggable, scrollable bottom sheet in Flutter (opens in a new tab)">
+                            <span>Creating a draggable, scrollable bottom sheet in Flutter</span>
+                            <span class="arrow" aria-hidden="true">&#8599;</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="row link" href="https://medium.com/@rishi_singh/designing-platform-specific-uis-in-flutter-a-comprehensive-guide-61f444b6bf64" target="_blank" rel="noopener noreferrer" aria-label="Designing platform-specific UIs in Flutter (opens in a new tab)">
+                            <span>Designing platform-specific UIs in Flutter</span>
+                            <span class="arrow" aria-hidden="true">&#8599;</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="row link" href="https://medium.com/@rishi_singh/how-to-blur-a-widget-in-flutter-edc32bfc6eea" target="_blank" rel="noopener noreferrer" aria-label="Blurring widgets in Flutter (opens in a new tab)">
+                            <span>Blurring widgets in Flutter</span>
+                            <span class="arrow" aria-hidden="true">&#8599;</span>
+                        </a>
+                    </li>
+            </ul>
+        </section>
+
+        <!-- Stack -->
+        <section id="stack" class="canvas section section-stack">
+            <div class="section-head">
+                <p class="eyebrow">04 &middot; Stack</p>
+                <h2 class="section-title serif">What I <em>reach for</em></h2>
+                <p class="section-intro">The languages, frameworks and tools I use most.</p>
+            </div>
+            <div class="stack-columns">
+                <div class="stack-column">
+                    <h3 class="stack-label eyebrow">Languages</h3>
+                    <ul class="row-list">
+                        <li>
+                            <a class="row stack-item link" href="https://learn.microsoft.com/en-us/dotnet/csharp/" target="_blank" rel="noopener noreferrer" aria-label="C# (opens in a new tab)">
+                                <span>C#</span>
+                                <span class="arrow" aria-hidden="true">&#8599;</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="row stack-item link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer" aria-label="JavaScript (opens in a new tab)">
+                                <span>JavaScript</span>
+                                <span class="arrow" aria-hidden="true">&#8599;</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="row stack-item link" href="https://www.typescriptlang.org" target="_blank" rel="noopener noreferrer" aria-label="TypeScript (opens in a new tab)">
+                                <span>TypeScript</span>
+                                <span class="arrow" aria-hidden="true">&#8599;</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="row stack-item link" href="https://dart.dev" target="_blank" rel="noopener noreferrer" aria-label="Dart (opens in a new tab)">
+                                <span>Dart</span>
+                                <span class="arrow" aria-hidden="true">&#8599;</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="row stack-item link" href="https://www.swift.org" target="_blank" rel="noopener noreferrer" aria-label="Swift (opens in a new tab)">
+                                <span>Swift</span>
+                                <span class="arrow" aria-hidden="true">&#8599;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="stack-column">
+                    <h3 class="stack-label eyebrow">Frameworks</h3>
+                    <ul class="row-list">
+                        <li>
+                            <a class="row stack-item link" href="https://dotnet.microsoft.com/en-us/apps/aspnet" target="_blank" rel="noopener noreferrer" aria-label="ASP.NET Core (opens in a new tab)">
+                                <span>ASP.NET Core</span>
+                                <span class="arrow" aria-hidden="true">&#8599;</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="row stack-item link" href="https://angular.dev" target="_blank" rel="noopener noreferrer" aria-label="Angular (opens in a new tab)">
+                                <span>Angular</span>
+                                <span class="arrow" aria-hidden="true">&#8599;</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="row stack-item link" href="https://react.dev" target="_blank" rel="noopener noreferrer" aria-label="React (opens in a new tab)">
+                                <span>React</span>
+                                <span class="arrow" aria-hidden="true">&#8599;</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="row stack-item link" href="https://flutter.dev" target="_blank" rel="noopener noreferrer" aria-label="Flutter (opens in a new tab)">
+                                <span>Flutter</span>
+                                <span class="arrow" aria-hidden="true">&#8599;</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="row stack-item link" href="https://developer.apple.com/swiftui/" target="_blank" rel="noopener noreferrer" aria-label="SwiftUI (opens in a new tab)">
+                                <span>SwiftUI</span>
+                                <span class="arrow" aria-hidden="true">&#8599;</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="row stack-item link" href="https://reactnative.dev" target="_blank" rel="noopener noreferrer" aria-label="React Native (opens in a new tab)">
+                                <span>React Native</span>
+                                <span class="arrow" aria-hidden="true">&#8599;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="stack-column">
+                    <h3 class="stack-label eyebrow">Tools</h3>
+                    <ul class="row-list">
+                        <li>
+                            <a class="row stack-item link" href="https://claude.com/product/claude-code" target="_blank" rel="noopener noreferrer" aria-label="Claude Code (opens in a new tab)">
+                                <span>Claude Code</span>
+                                <span class="arrow" aria-hidden="true">&#8599;</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="row stack-item link" href="https://visualstudio.microsoft.com" target="_blank" rel="noopener noreferrer" aria-label="Visual Studio (opens in a new tab)">
+                                <span>Visual Studio</span>
+                                <span class="arrow" aria-hidden="true">&#8599;</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="row stack-item link" href="https://www.jetbrains.com/rider/" target="_blank" rel="noopener noreferrer" aria-label="JetBrains Rider (opens in a new tab)">
+                                <span>JetBrains Rider</span>
+                                <span class="arrow" aria-hidden="true">&#8599;</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="row stack-item link" href="https://code.visualstudio.com" target="_blank" rel="noopener noreferrer" aria-label="VS Code (opens in a new tab)">
+                                <span>VS Code</span>
+                                <span class="arrow" aria-hidden="true">&#8599;</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="row stack-item link" href="https://developer.apple.com/xcode/" target="_blank" rel="noopener noreferrer" aria-label="Xcode (opens in a new tab)">
+                                <span>Xcode</span>
+                                <span class="arrow" aria-hidden="true">&#8599;</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="row stack-item link" href="https://learn.microsoft.com/en-us/ssms/sql-server-management-studio-ssms" target="_blank" rel="noopener noreferrer" aria-label="SQL Server Management Studio (opens in a new tab)">
+                                <span>SQL Server Management Studio</span>
+                                <span class="arrow" aria-hidden="true">&#8599;</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="row stack-item link" href="https://tableplus.com" target="_blank" rel="noopener noreferrer" aria-label="TablePlus (opens in a new tab)">
+                                <span>TablePlus</span>
+                                <span class="arrow" aria-hidden="true">&#8599;</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="row stack-item link" href="https://www.figma.com" target="_blank" rel="noopener noreferrer" aria-label="Figma (opens in a new tab)">
+                                <span>Figma</span>
+                                <span class="arrow" aria-hidden="true">&#8599;</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="row stack-item link" href="https://excalidraw.com" target="_blank" rel="noopener noreferrer" aria-label="Excalidraw (opens in a new tab)">
+                                <span>Excalidraw</span>
+                                <span class="arrow" aria-hidden="true">&#8599;</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="row stack-item link" href="https://www.notion.so" target="_blank" rel="noopener noreferrer" aria-label="Notion (opens in a new tab)">
+                                <span>Notion</span>
+                                <span class="arrow" aria-hidden="true">&#8599;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <!-- Get in touch -->
+        <div class="canvas">
+            <div class="contact">
+                <p class="eyebrow">Get in touch</p>
+                <h2 class="contact-title serif">Let&rsquo;s build something <em>together.</em></h2>
+                <p class="contact-text">Have an idea, a role, or just want to say hi? My inbox is open.</p>
+                <a class="btn link" href="mailto:email@rishisingh.in">Email me</a>
+                <div class="contact-links">
+                    <a class="link" href="https://www.linkedin.com/in/rishi-singh-b2226415b" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (opens in a new tab)">LinkedIn &#8599;</a>
+                    <a class="link" href="https://github.com/rishi-singh26" target="_blank" rel="noopener noreferrer" aria-label="GitHub (opens in a new tab)">GitHub &#8599;</a>
+                    <a class="link" href="https://medium.com/@rishi_singh" target="_blank" rel="noopener noreferrer" aria-label="Medium (opens in a new tab)">Medium &#8599;</a>
+                </div>
+            </div>
+        </div>
+        <div class="canvas footer-bottom">
+            <span>&copy; 2026 Rishi Singh</span>
+            <span>Built with care in India</span>
         </div>
     </footer>
 </body>
