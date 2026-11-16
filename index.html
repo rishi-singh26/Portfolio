@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 
 <head>
     <meta charset="UTF-8">
@@ -38,6 +38,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Instrument+Serif:ital@0;1&amp;display=swap" rel="stylesheet">
 
     <link rel="manifest" href="./manifest.json">
+
+    <script src="./experience.js"></script>
 </head>
 
 <body>
@@ -82,34 +84,133 @@
             <div class="section-head">
                 <p class="eyebrow">01 &middot; Experience</p>
                 <h2 class="section-title serif">Where I&rsquo;ve <em>worked</em></h2>
+                <p class="section-hint">Select a role to see what I did there.</p>
             </div>
-            <ol class="section-body">
-                <li class="job">
-                    <p class="job-date">Feb 2026 &middot; Now</p>
-                    <div class="job-info">
-                        <h3 class="job-title">Senior Engineer</h3>
-                        <p class="job-company">Altimetrik &middot; Product and Platform Engineering</p>
+            <ol class="section-body exps" data-any="no">
+                <li class="exp-row" data-open="no">
+                    <div class="exp">
+                        <button class="exp-head" type="button" aria-expanded="false" aria-controls="exp-detail-0">
+                            <span class="exp-date">Feb 2026 &middot; Now</span>
+                            <span class="exp-info">
+                                <span class="exp-title">Senior Engineer</span>
+                                <span class="exp-company">Altimetrik &middot; Product and Platform Engineering</span>
+                            </span>
+                            <span class="exp-plus"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14" /></svg></span>
+                        </button>
+                        <section class="exp-card" id="exp-detail-0" tabindex="-1" aria-label="Senior Engineer details">
+                            <div class="exp-ghost" aria-hidden="true">
+                            <span class="exp-date">Feb 2026 &middot; Now</span>
+                            <span class="exp-info">
+                                <span class="exp-title">Senior Engineer</span>
+                                <span class="exp-company">Altimetrik &middot; Product and Platform Engineering</span>
+                            </span>
+                            <span class="exp-plus"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14" /></svg></span>
+                            </div>
+                            <div class="exp-more">
+                                <div class="exp-detail">
+                                    <p class="exp-summary">[One or two sentences on your role and what you owned here.]</p>
+                                    <ul class="exp-list">
+                                    <li><span class="exp-dot" aria-hidden="true"></span><span>[Key contribution or project: what you built and the outcome]</span></li>
+                                    <li><span class="exp-dot" aria-hidden="true"></span><span>[Another contribution: a feature, system or process you improved]</span></li>
+                                    <li><span class="exp-dot" aria-hidden="true"></span><span>[Technologies, team or scale you worked with]</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
                     </div>
                 </li>
-                <li class="job">
-                    <p class="job-date">Aug 2021 &middot; Feb 2026</p>
-                    <div class="job-info">
-                        <h3 class="job-title">Custom Software Development Analyst</h3>
-                        <p class="job-company">Accenture</p>
+                <li class="exp-row" data-open="no">
+                    <div class="exp">
+                        <button class="exp-head" type="button" aria-expanded="false" aria-controls="exp-detail-1">
+                            <span class="exp-date">Aug 2021 &middot; Feb 2026</span>
+                            <span class="exp-info">
+                                <span class="exp-title">Custom Software Development Analyst</span>
+                                <span class="exp-company">Accenture</span>
+                            </span>
+                            <span class="exp-plus"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14" /></svg></span>
+                        </button>
+                        <section class="exp-card" id="exp-detail-1" tabindex="-1" aria-label="Custom Software Development Analyst details">
+                            <div class="exp-ghost" aria-hidden="true">
+                            <span class="exp-date">Aug 2021 &middot; Feb 2026</span>
+                            <span class="exp-info">
+                                <span class="exp-title">Custom Software Development Analyst</span>
+                                <span class="exp-company">Accenture</span>
+                            </span>
+                            <span class="exp-plus"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14" /></svg></span>
+                            </div>
+                            <div class="exp-more">
+                                <div class="exp-detail">
+                                    <p class="exp-summary">[One or two sentences on your role and what you owned here.]</p>
+                                    <ul class="exp-list">
+                                    <li><span class="exp-dot" aria-hidden="true"></span><span>[Key contribution or project: what you built and the outcome]</span></li>
+                                    <li><span class="exp-dot" aria-hidden="true"></span><span>[Another contribution: a feature, system or process you improved]</span></li>
+                                    <li><span class="exp-dot" aria-hidden="true"></span><span>[Technologies, team or scale you worked with]</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
                     </div>
                 </li>
-                <li class="job">
-                    <p class="job-date">Jul 2020 &middot; Sep 2020</p>
-                    <div class="job-info">
-                        <h3 class="job-title">Front-End Developer Intern</h3>
-                        <p class="job-company">Krenai</p>
+                <li class="exp-row" data-open="no">
+                    <div class="exp">
+                        <button class="exp-head" type="button" aria-expanded="false" aria-controls="exp-detail-2">
+                            <span class="exp-date">Jul 2020 &middot; Sep 2020</span>
+                            <span class="exp-info">
+                                <span class="exp-title">Front-End Developer Intern</span>
+                                <span class="exp-company">Krenai</span>
+                            </span>
+                            <span class="exp-plus"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14" /></svg></span>
+                        </button>
+                        <section class="exp-card" id="exp-detail-2" tabindex="-1" aria-label="Front-End Developer Intern details">
+                            <div class="exp-ghost" aria-hidden="true">
+                            <span class="exp-date">Jul 2020 &middot; Sep 2020</span>
+                            <span class="exp-info">
+                                <span class="exp-title">Front-End Developer Intern</span>
+                                <span class="exp-company">Krenai</span>
+                            </span>
+                            <span class="exp-plus"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14" /></svg></span>
+                            </div>
+                            <div class="exp-more">
+                                <div class="exp-detail">
+                                    <p class="exp-summary">[One or two sentences on your role and what you owned here.]</p>
+                                    <ul class="exp-list">
+                                    <li><span class="exp-dot" aria-hidden="true"></span><span>[Key contribution or project: what you built and the outcome]</span></li>
+                                    <li><span class="exp-dot" aria-hidden="true"></span><span>[Another contribution: a feature, system or process you improved]</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
                     </div>
                 </li>
-                <li class="job">
-                    <p class="job-date">Jun 2019 &middot; Jul 2019</p>
-                    <div class="job-info">
-                        <h3 class="job-title">Summer Intern</h3>
-                        <p class="job-company">CronJ</p>
+                <li class="exp-row" data-open="no">
+                    <div class="exp">
+                        <button class="exp-head" type="button" aria-expanded="false" aria-controls="exp-detail-3">
+                            <span class="exp-date">Jun 2019 &middot; Jul 2019</span>
+                            <span class="exp-info">
+                                <span class="exp-title">Summer Intern</span>
+                                <span class="exp-company">CronJ</span>
+                            </span>
+                            <span class="exp-plus"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14" /></svg></span>
+                        </button>
+                        <section class="exp-card" id="exp-detail-3" tabindex="-1" aria-label="Summer Intern details">
+                            <div class="exp-ghost" aria-hidden="true">
+                            <span class="exp-date">Jun 2019 &middot; Jul 2019</span>
+                            <span class="exp-info">
+                                <span class="exp-title">Summer Intern</span>
+                                <span class="exp-company">CronJ</span>
+                            </span>
+                            <span class="exp-plus"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14" /></svg></span>
+                            </div>
+                            <div class="exp-more">
+                                <div class="exp-detail">
+                                    <p class="exp-summary">[One or two sentences on your role and what you owned here.]</p>
+                                    <ul class="exp-list">
+                                    <li><span class="exp-dot" aria-hidden="true"></span><span>[Key contribution or project: what you built and the outcome]</span></li>
+                                    <li><span class="exp-dot" aria-hidden="true"></span><span>[Another contribution: a feature, system or process you improved]</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
                     </div>
                 </li>
             </ol>
@@ -122,74 +223,214 @@
                 <h2 class="section-title serif">Things I&rsquo;ve <em>made</em></h2>
                 <p class="section-intro">Small, focused tools I built because I wanted them to exist.</p>
             </div>
-            <div class="card-grid">
-            <!-- TempBox -->
-            <a class="card link" href="https://tempbox.rishisingh.in" target="_blank" rel="noopener noreferrer">
-                <div class="card-top">
-                    <img class="card-image" src="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/TempBox.png" alt="TempBox application icon" width="56" height="56" loading="lazy">
-                    <span class="arrow" aria-hidden="true">&#8599;</span>
-                </div>
-                <div class="card-content">
-                    <h3 class="card-title">TempBox</h3>
-                    <p class="card-subtitle">Create disposable email addresses to protect your privacy and keep your inbox clean.</p>
-                </div>
-            </a>
-            <!-- Stegno -->
-            <a class="card link" href="https://rishi-singh26.github.io/stegno/" target="_blank" rel="noopener noreferrer">
-                <div class="card-top">
-                    <img class="card-image" src="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/Stegno.svg" alt="Stegno application icon" width="56" height="56" loading="lazy">
-                    <span class="arrow" aria-hidden="true">&#8599;</span>
-                </div>
-                <div class="card-content">
-                    <h3 class="card-title">Stegno</h3>
-                    <p class="card-subtitle">Hide text and images inside other images using LSB steganography.</p>
-                </div>
-            </a>
-            <!-- JotDown -->
-            <a class="card link" href="https://jotdown.rishisingh.in" target="_blank" rel="noopener noreferrer">
-                <div class="card-top">
-                    <img class="card-image" src="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/JotDown.png" alt="JotDown application icon" width="56" height="56" loading="lazy">
-                    <span class="arrow" aria-hidden="true">&#8599;</span>
-                </div>
-                <div class="card-content">
-                    <h3 class="card-title">JotDown</h3>
-                    <p class="card-subtitle">A menu bar extension for quick access to Apple Notes.</p>
-                </div>
-            </a>
-            <!-- Digipin Manager -->
-            <a class="card link" href="https://github.com/rishi-singh26/DigipinManager" target="_blank" rel="noopener noreferrer">
-                <div class="card-top">
-                    <img class="card-image" src="https://cdn.jsdelivr.net/gh/rishi-singh26/DigipinManager@main/DigipinManager/Assets.xcassets/PresentationIcon.imageset/DigipinManager.png" alt="Digipin Manager application icon" width="56" height="56" loading="lazy">
-                    <span class="arrow" aria-hidden="true">&#8599;</span>
-                </div>
-                <div class="card-content">
-                    <h3 class="card-title">Digipin Manager</h3>
-                    <p class="card-subtitle">An app for saving, organising and managing Digipins.</p>
-                </div>
-            </a>
-            <!-- Neotris -->
-            <a class="card link" href="https://github.com/rishi-singh26/Neotris" target="_blank" rel="noopener noreferrer">
-                <div class="card-top">
-                    <img class="card-image" src="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/Neotris.png" alt="Neotris application icon" width="56" height="56" loading="lazy">
-                    <span class="arrow" aria-hidden="true">&#8599;</span>
-                </div>
-                <div class="card-content">
-                    <h3 class="card-title">Neotris</h3>
-                    <p class="card-subtitle">A block-dropping puzzle game with a fresh coat of paint.</p>
-                </div>
-            </a>
-            <!-- Map GIS -->
-            <div class="card in-progress">
-                <div class="card-top">
-                    <img class="card-image" src="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/MapGIS.png" alt="Map GIS application icon" width="56" height="56" loading="lazy">
-                    <span class="badge">In progress</span>
-                </div>
-                <div class="card-content">
-                    <h3 class="card-title">Map GIS</h3>
-                    <p class="card-subtitle">Something new with maps, coming soon.</p>
-                </div>
-            </div>
-            </div>
+            <ol class="projs" data-any="no">
+                <li class="pj-row" data-open="no">
+                    <div class="pj">
+                        <button class="pj-head" type="button" aria-expanded="false" aria-controls="pj-detail-0">
+                            <span class="proj-idx" aria-hidden="true">01</span>
+                            <img class="proj-icon" src="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/TempBox.png" alt="TempBox application icon" width="64" height="64" loading="lazy">
+                            <span class="proj-body">
+                                <span class="proj-title">TempBox</span>
+                                <span class="proj-desc">Create disposable email addresses to protect your privacy and keep your inbox clean.</span>
+                            </span>
+                            <span class="proj-host">tempbox.rishisingh.in</span>
+                            <span class="pj-plus"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14" /></svg></span>
+                        </button>
+                        <section class="pj-card" id="pj-detail-0" tabindex="-1" aria-label="TempBox details">
+                            <div class="pj-ghost" aria-hidden="true">
+                            <span class="proj-idx" aria-hidden="true">01</span>
+                            <img class="proj-icon" src="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/TempBox.png" alt="TempBox application icon" width="64" height="64" loading="lazy">
+                            <span class="proj-body">
+                                <span class="proj-title">TempBox</span>
+                                <span class="proj-desc">Create disposable email addresses to protect your privacy and keep your inbox clean.</span>
+                            </span>
+                            <span class="proj-host">tempbox.rishisingh.in</span>
+                            <span class="pj-plus"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14" /></svg></span>
+                            </div>
+                            <div class="pj-more">
+                                <div class="pj-detail">
+                                    <p class="pj-summary">TempBox lets you create disposable emails on the fly. Protect your privacy, manage subscriptions easily, and keep your main inbox clutter-free.</p>
+                                    <a class="pj-link" href="https://tempbox.rishisingh.in" target="_blank" rel="noopener noreferrer" aria-label="Visit site for TempBox (opens in a new tab)">
+                                        <span>Visit site</span>
+                                        <span class="arrow" aria-hidden="true">&#8599;</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </li>
+                <li class="pj-row" data-open="no">
+                    <div class="pj">
+                        <button class="pj-head" type="button" aria-expanded="false" aria-controls="pj-detail-1">
+                            <span class="proj-idx" aria-hidden="true">02</span>
+                            <img class="proj-icon" src="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/Stegno.svg" alt="Stegno application icon" width="64" height="64" loading="lazy">
+                            <span class="proj-body">
+                                <span class="proj-title">Stegno</span>
+                                <span class="proj-desc">Hide text and images inside other images using LSB steganography.</span>
+                            </span>
+                            <span class="proj-host">rishi-singh26.github.io/stegno</span>
+                            <span class="pj-plus"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14" /></svg></span>
+                        </button>
+                        <section class="pj-card" id="pj-detail-1" tabindex="-1" aria-label="Stegno details">
+                            <div class="pj-ghost" aria-hidden="true">
+                            <span class="proj-idx" aria-hidden="true">02</span>
+                            <img class="proj-icon" src="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/Stegno.svg" alt="Stegno application icon" width="64" height="64" loading="lazy">
+                            <span class="proj-body">
+                                <span class="proj-title">Stegno</span>
+                                <span class="proj-desc">Hide text and images inside other images using LSB steganography.</span>
+                            </span>
+                            <span class="proj-host">rishi-singh26.github.io/stegno</span>
+                            <span class="pj-plus"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14" /></svg></span>
+                            </div>
+                            <div class="pj-more">
+                                <div class="pj-detail">
+                                    <p class="pj-summary">An app that uses LSB steganography to securely hide and extract text and images within images, with capacity checks and easy embedding.</p>
+                                    <a class="pj-link" href="https://rishi-singh26.github.io/stegno/" target="_blank" rel="noopener noreferrer" aria-label="Visit site for Stegno (opens in a new tab)">
+                                        <span>Visit site</span>
+                                        <span class="arrow" aria-hidden="true">&#8599;</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </li>
+                <li class="pj-row" data-open="no">
+                    <div class="pj">
+                        <button class="pj-head" type="button" aria-expanded="false" aria-controls="pj-detail-2">
+                            <span class="proj-idx" aria-hidden="true">03</span>
+                            <img class="proj-icon" src="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/JotDown.png" alt="JotDown application icon" width="64" height="64" loading="lazy">
+                            <span class="proj-body">
+                                <span class="proj-title">JotDown</span>
+                                <span class="proj-desc">A menu bar extension for quick access to Apple Notes.</span>
+                            </span>
+                            <span class="proj-host">jotdown.rishisingh.in</span>
+                            <span class="pj-plus"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14" /></svg></span>
+                        </button>
+                        <section class="pj-card" id="pj-detail-2" tabindex="-1" aria-label="JotDown details">
+                            <div class="pj-ghost" aria-hidden="true">
+                            <span class="proj-idx" aria-hidden="true">03</span>
+                            <img class="proj-icon" src="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/JotDown.png" alt="JotDown application icon" width="64" height="64" loading="lazy">
+                            <span class="proj-body">
+                                <span class="proj-title">JotDown</span>
+                                <span class="proj-desc">A menu bar extension for quick access to Apple Notes.</span>
+                            </span>
+                            <span class="proj-host">jotdown.rishisingh.in</span>
+                            <span class="pj-plus"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14" /></svg></span>
+                            </div>
+                            <div class="pj-more">
+                                <div class="pj-detail">
+                                    <p class="pj-summary">A menu bar extension for Apple Notes. Create notes straight from the menu bar with quick-access keyboard shortcuts.</p>
+                                    <a class="pj-link" href="https://jotdown.rishisingh.in" target="_blank" rel="noopener noreferrer" aria-label="Visit site for JotDown (opens in a new tab)">
+                                        <span>Visit site</span>
+                                        <span class="arrow" aria-hidden="true">&#8599;</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </li>
+                <li class="pj-row" data-open="no">
+                    <div class="pj">
+                        <button class="pj-head" type="button" aria-expanded="false" aria-controls="pj-detail-3">
+                            <span class="proj-idx" aria-hidden="true">04</span>
+                            <img class="proj-icon" src="https://cdn.jsdelivr.net/gh/rishi-singh26/DigipinManager@main/DigipinManager/Assets.xcassets/PresentationIcon.imageset/DigipinManager.png" alt="Digipin Manager application icon" width="64" height="64" loading="lazy">
+                            <span class="proj-body">
+                                <span class="proj-title">Digipin Manager</span>
+                                <span class="proj-desc">An app for searching, saving and managing Digipins.</span>
+                            </span>
+                            <span class="proj-host">github.com/rishi-singh26</span>
+                            <span class="pj-plus"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14" /></svg></span>
+                        </button>
+                        <section class="pj-card" id="pj-detail-3" tabindex="-1" aria-label="Digipin Manager details">
+                            <div class="pj-ghost" aria-hidden="true">
+                            <span class="proj-idx" aria-hidden="true">04</span>
+                            <img class="proj-icon" src="https://cdn.jsdelivr.net/gh/rishi-singh26/DigipinManager@main/DigipinManager/Assets.xcassets/PresentationIcon.imageset/DigipinManager.png" alt="Digipin Manager application icon" width="64" height="64" loading="lazy">
+                            <span class="proj-body">
+                                <span class="proj-title">Digipin Manager</span>
+                                <span class="proj-desc">An app for searching, saving and managing Digipins.</span>
+                            </span>
+                            <span class="proj-host">github.com/rishi-singh26</span>
+                            <span class="pj-plus"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14" /></svg></span>
+                            </div>
+                            <div class="pj-more">
+                                <div class="pj-detail">
+                                    <p class="pj-summary">A simple app to manage your Digipins. Search for a Digipin, save the ones you use and keep them organised in one place.</p>
+                                    <a class="pj-link" href="https://github.com/rishi-singh26/DigipinManager" target="_blank" rel="noopener noreferrer" aria-label="View on GitHub for Digipin Manager (opens in a new tab)">
+                                        <span>View on GitHub</span>
+                                        <span class="arrow" aria-hidden="true">&#8599;</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </li>
+                <li class="pj-row" data-open="no">
+                    <div class="pj">
+                        <button class="pj-head" type="button" aria-expanded="false" aria-controls="pj-detail-4">
+                            <span class="proj-idx" aria-hidden="true">05</span>
+                            <img class="proj-icon" src="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/Neotris.png" alt="Neotris application icon" width="64" height="64" loading="lazy">
+                            <span class="proj-body">
+                                <span class="proj-title">Neotris</span>
+                                <span class="proj-desc">A block-dropping puzzle game with a fresh coat of paint.</span>
+                            </span>
+                            <span class="proj-host">github.com/rishi-singh26</span>
+                            <span class="pj-plus"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14" /></svg></span>
+                        </button>
+                        <section class="pj-card" id="pj-detail-4" tabindex="-1" aria-label="Neotris details">
+                            <div class="pj-ghost" aria-hidden="true">
+                            <span class="proj-idx" aria-hidden="true">05</span>
+                            <img class="proj-icon" src="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/Neotris.png" alt="Neotris application icon" width="64" height="64" loading="lazy">
+                            <span class="proj-body">
+                                <span class="proj-title">Neotris</span>
+                                <span class="proj-desc">A block-dropping puzzle game with a fresh coat of paint.</span>
+                            </span>
+                            <span class="proj-host">github.com/rishi-singh26</span>
+                            <span class="pj-plus"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14" /></svg></span>
+                            </div>
+                            <div class="pj-more">
+                                <div class="pj-detail">
+                                    <p class="pj-summary">A vibrant twist on the classic block-dropping puzzle.</p>
+                                    <a class="pj-link" href="https://github.com/rishi-singh26/Neotris" target="_blank" rel="noopener noreferrer" aria-label="View on GitHub for Neotris (opens in a new tab)">
+                                        <span>View on GitHub</span>
+                                        <span class="arrow" aria-hidden="true">&#8599;</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </li>
+                <li class="pj-row pj-soon" data-open="no">
+                    <div class="pj">
+                        <button class="pj-head" type="button" aria-expanded="false" aria-controls="pj-detail-5">
+                            <span class="proj-idx" aria-hidden="true">06</span>
+                            <img class="proj-icon" src="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/MapGIS.png" alt="Map GIS application icon" width="64" height="64" loading="lazy">
+                            <span class="proj-body">
+                                <span class="proj-title">Map GIS</span>
+                                <span class="proj-desc">Something new with maps, coming soon.</span>
+                            </span>
+                            <span class="proj-host">In progress</span>
+                            <span class="pj-plus"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14" /></svg></span>
+                        </button>
+                        <section class="pj-card" id="pj-detail-5" tabindex="-1" aria-label="Map GIS details">
+                            <div class="pj-ghost" aria-hidden="true">
+                            <span class="proj-idx" aria-hidden="true">06</span>
+                            <img class="proj-icon" src="https://cdn.jsdelivr.net/gh/rishi-singh26/Portfolio/assets/MapGIS.png" alt="Map GIS application icon" width="64" height="64" loading="lazy">
+                            <span class="proj-body">
+                                <span class="proj-title">Map GIS</span>
+                                <span class="proj-desc">Something new with maps, coming soon.</span>
+                            </span>
+                            <span class="proj-host">In progress</span>
+                            <span class="pj-plus"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14" /></svg></span>
+                            </div>
+                            <div class="pj-more">
+                                <div class="pj-detail">
+                                    <p class="pj-summary">Map GIS is currently in progress. More details will be added here once it is ready.</p>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </li>
+            </ol>
         </section>
 
         <!-- Articles -->
