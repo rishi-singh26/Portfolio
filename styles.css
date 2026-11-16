@@ -618,35 +618,21 @@ main section[id] {
     transform: translateY(-3px);
 }
 
-/* Without JavaScript the details are always visible */
-.no-js .exp-head {
-    cursor: default;
-}
-
+/* Experience cards switched off (EXPERIENCE_CARDS_ENABLED = false in experience.js).
+   Also the state without JavaScript, since the flag lives in the script. */
+.exp-static .exp-card,
+.exp-static .exp-plus,
+.exp-static .section-hint,
+.no-js .exp-card,
 .no-js .exp-plus,
-.no-js .exp-ghost {
+.no-js .section-hint {
     display: none;
 }
 
-.no-js .exp-card {
-    position: static;
-    padding: 0;
-    border: 0;
-    background: none;
-    box-shadow: none;
-    opacity: 1;
-    transform: none;
-    visibility: visible;
-    pointer-events: auto;
-}
-
-.no-js .exp-more {
-    grid-template-rows: 1fr;
-}
-
-.no-js .exp-detail > * {
-    opacity: 1;
-    transform: none;
+.exp-static .exp-head,
+.no-js .exp-head {
+    cursor: default;
+    pointer-events: none;
 }
 
 /* ---------- Projects ---------- */

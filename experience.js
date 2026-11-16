@@ -1,6 +1,14 @@
 (function () {
+    // Feature flag: set to true to make the Experience roles clickable cards
+    var EXPERIENCE_CARDS_ENABLED = false;
+
     // Remove the no-js fallback as soon as scripting is available
     document.documentElement.classList.remove('no-js');
+
+    // Without the cards, Experience renders as a plain list (styled via .exp-static)
+    if (!EXPERIENCE_CARDS_ENABLED) {
+        document.documentElement.classList.add('exp-static');
+    }
 
     document.addEventListener('DOMContentLoaded', function () {
         // Expandable cards: click to open; click again, click outside or press Esc to close
@@ -44,7 +52,16 @@
             });
         }
 
-        setupCards('.exps', '.exp-row', '.exp-head');
+        if (EXPERIENCE_CARDS_ENABLED) {
+            setupCards('.exps', '.exp-row', '.exp-head');
+        } else {
+            // Take the role headers out of the tab order and drop the disclosure semantics
+            Array.prototype.forEach.call(document.querySelectorAll('.exp-head'), function (head) {
+                head.setAttribute('tabindex', '-1');
+                head.removeAttribute('aria-expanded');
+                head.removeAttribute('aria-controls');
+            });
+        }
         setupCards('.projs', '.pj-row', '.pj-head');
     });
 })();
